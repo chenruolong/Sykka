@@ -1,8 +1,10 @@
 # Sykka Competitive Intelligence Tracker
 
-Daily Brief → Event Tracker → Current Competitive View。维护对象是事件及证据，不是新闻篇数。
+Daily Brief → Event Tracker → Monthly Review → Current Competitive View / Monthly Watchlist。维护对象是事件及证据，不是新闻篇数。
 
-- 创建 / 最近维护：2026-09-07（首轮扫描完成；覆盖限制见扫描记录）。
+V2：Tracker 是证据 / 长期记忆层；[月报](monthly/README.md)是阶段性判断层。Tracker 只保留当前判断、观察重点和事件证据，不追加日报全文或周维护日志。已有首轮扫描记录作为初始化证据保留。
+
+- 创建：2026-09-07；最近维护：2026-09-08（V2 结构升级，未重新核验事件；首轮扫描覆盖限制见扫描记录）。
 - 时间口径：Asia/Shanghai；日期 YYYY-MM-DD，来源时间保留原时区。
 - 节奏：每日发现与去重，每周五沉淀过去 7 天日报及全部 Active Signals。
 - 入库：P0 和值得持续跟踪的 P1；P2 默认过滤。
@@ -10,7 +12,9 @@ Daily Brief → Event Tracker → Current Competitive View。维护对象是事�
 
 ## Current Competitive View
 
-仅在新证据改变判断时更新，引用事件 ID、证据和判断日期。区分事实、推测、待验证假设。
+Last Reviewed: 2026-09-07
+
+原则上在月结时复核和更新；只有重大 P0 的新增证据足以改变整体判断时，才允许周中调整。引用事件 ID、证据和判断日期，区分事实、推测、待验证假设。完成判断复核才更新 Last Reviewed，结构编辑或例行周维护不刷新该日期。月度变化及原因写入对应月报；周中 P0 调整在关联事件 Timeline 留下日期、原判断、新判断及依据，月结时回溯。
 
 | 对象 | 当前判断 | 持续关注 | 支撑事件 / 判断日期 |
 | --- | --- | --- | --- |
@@ -19,6 +23,16 @@ Daily Brief → Event Tracker → Current Competitive View。维护对象是事�
 | Industry | 事实：Ethena Pay 已公开推出；推测：发行生态开始自建消费者分发入口。单个案例不足以认定全行业趋势 | 底层资产、真实可用范围与实际使用规模 | IND-001 / 2026-09-07 |
 
 趋势判断须说明证据支持什么、仍不确定什么、什么证据会改变判断。官宣不等于全面可用，相关性不等于因果，历史 Sykka 规划不等于当前已上线能力。
+
+## Monthly Watchlist｜2026-09
+
+初始化状态：待首次月结制定；暂无可核验的上月月报 Watchlist，不将已有 Open Questions 冒充上月决定。当前事件仍按各自 Open Questions 跟踪。
+
+每月月结后，以月报 Next Month Watchlist 更新本节标题为目标月份 `YYYY-MM`。仅保留当月清单，历史清单保留在对应月报；日报优先检查这些线索。每项写明事件 ID（可引用多个 RD/KA/IND ID）、待验证问题、检查来源和复查日期或触发条件。尚未入库的线索标“待分配 ID”，核验并去重后再分配。
+
+| 事件 ID | 待验证问题 / 观察重点 | 检查来源 | 复查日期 / 触发条件 | 来源月报 |
+| --- | --- | --- | --- | --- |
+| 待制定 | 首次月结后填写 | — | 首次月结 | 无 |
 
 ## 收集范围与来源
 
@@ -64,6 +78,7 @@ RedotPay、KAST 为核心，覆盖产品、市场、增长、商业化、体验�
 - Status: Confirmed
 - First Seen: 2026-09-07
 - Last Updated: 2026-09-07
+- Monthly Review: 无（尚无已核验的月报引用）
 - 本轮判定：NEW（首次入库；事件本身是 8 月预告的后续披露）
 
 #### What Happened
@@ -94,6 +109,7 @@ RedotPay 于 9 月 7 日公告称，某四大会计师事务所已审查其香�
 - Status: Confirmed
 - First Seen: 2026-09-07
 - Last Updated: 2026-09-07
+- Monthly Review: 无（尚无已核验的月报引用）
 - 本轮判定：NEW（官方页面本周更新；确切首次上线日期待确认）
 
 #### What Happened
@@ -126,6 +142,7 @@ RedotPay 于 9 月 7 日公告称，某四大会计师事务所已审查其香�
 - Status: Confirmed
 - First Seen: 2026-09-07
 - Last Updated: 2026-09-07
+- Monthly Review: 无（尚无已核验的月报引用）
 - 本轮判定：NEW（本周官方更新，首次上线日期待确认）
 
 #### What Happened
@@ -156,6 +173,7 @@ RedotPay 于 9 月 7 日公告称，某四大会计师事务所已审查其香�
 - Status: Confirmed
 - First Seen: 2026-09-07
 - Last Updated: 2026-09-07
+- Monthly Review: 无（尚无已核验的月报引用）
 - 本轮判定：NEW
 
 #### What Happened
@@ -196,6 +214,7 @@ Ava Labs 于 9 月 1 日宣布 Ethena Pay 已推出，围绕 USDe 余额提供�
 - Status: <Watching / Developing / Confirmed>
 - First Seen: <本系统首次发现日期>
 - Last Updated: <最近实质更新日期>
+- Monthly Review: <无；纳入后追加月报链接，月份为 YYYY-MM，可多个>
 
 #### What Happened
 <事实摘要；实际发生日期、对象、地区、平台、产品及适用限制。未知写待确认。>
@@ -222,9 +241,11 @@ Ava Labs 于 9 月 1 日宣布 Ethena Pay 已推出，围绕 USDe 余额提供�
 
 Timeline 按时间顺序追加，更正保留原判断及理由。First Seen 不随报道变化；证据、判断、状态或问题实质变化才更新 Last Updated。例行复查无变化只更新文档最近维护日期。来源编号在事件内唯一。
 
+Monthly Review 记录实际纳入过的月报月份，使用链接列表，如 `[2026-09](monthly/2026-09.md), [2026-10](monthly/2026-10.md)`；不提前登记尚未生成的月报，不覆盖旧月份，同月不重复。仅回填月报引用不改变事件 Last Updated；关闭或重开事件时保留该字段。
+
 ## Closed Signals
 
-当前无已关闭事件。关闭时将完整条目从 Active 移到本节，保留 ID、Timeline、Sources，Status 改为 Closed，补充：
+当前无已关闭事件。关闭时将完整条目从 Active 移到本节，保留 ID、Timeline、Sources、Monthly Review，Status 改为 Closed，补充：
 
 - Closed On: <关闭日期>
 - Closure Reason: <结束 / 被证伪 / 暂无跟踪价值 / 合并至某 ID>
@@ -279,17 +300,17 @@ Priority 表示关注程度，Status 表示证据和跟踪阶段，两者独立�
 
 ## 每周维护 Checklist
 
-每周五回顾过去 7 天日报及全部 Active Signals；上次维护更早则补查遗漏区间。
+每周五回顾过去 7 天日报及全部 Active Signals；上次维护更早则补查遗漏区间。主要维护 Active Signals 的 Timeline、Last Updated、Status、Current Assessment，并关闭已结束事件；不例行改写整体竞争判断，不追加周维护日志。
 
 - [ ] 读取 GitHub 最新文件，确认最近维护日期、编号、日报覆盖范围，记录来源或历史缺口。
 - [ ] 筛选新增：仅将 P0 和需持续跟踪的 P1 入库；先查 Active / Closed 去重，再分配 ID。
-- [ ] 更新进展：核验原始来源，追加 Timeline，注明新增事实、反证及地区 / 平台 / 时间范围。
+- [ ] 更新进展：核验原始来源，追加 Timeline，注明新增事实、反证及地区 / 平台 / 时间范围；有实质变化才刷新 Last Updated。
 - [ ] 校准判断：分别更新 Priority、Status、Current Assessment，不把社区信号或营销声明扩大为已确认结论。
 - [ ] 复查问题：处理 Open Questions，为未解决问题填写验证方式及下次复查日期 / 触发条件。
 - [ ] 关闭或重开：结束、证伪、合并或无持续价值的事件移至 Closed，保留全文、理由及重开条件。
-- [ ] 更新竞争判断：仅在证据改变判断时修改 Current Competitive View，引用事件 ID 及判断日期；无变化则保留。
+- [ ] 检查重大 P0：只有新增证据足以改变整体判断才周中调整 Current Competitive View，记录依据及 Last Reviewed；其余留待月结复核。
 - [ ] 检查质量：ID 唯一，来源可追溯，日期与数据口径齐全；失效来源标记并补证据，不删除历史。
 - [ ] 提交前重读远端，避免覆盖他人变更；只提交本次维护文件，更新最近维护日期。
 - [ ] 提交后读取文件核对，报告新增 / 更新 / 关闭的 ID、判断变化、未解决事项及提交链接。
 
-建议提交说明：`维护竞品情报：YYYY-MM-DD，新增 N / 更新 N / 关闭 N`。无实质变化仅记录复查日期与覆盖范围，不制造事件更新。先运行 1–2 周，再根据漏报、重复、优先级及 Sykka 相关性调整规则。
+建议提交说明：`维护竞品情报：YYYY-MM-DD，新增 N / 更新 N / 关闭 N`。无实质变化仅更新文档最近维护日期；覆盖范围和缺口写在提交说明或当次交付，不向 Tracker 追加周日志，不制造事件更新。先运行 1–2 周，再根据漏报、重复、优先级及 Sykka 相关性调整规则。
