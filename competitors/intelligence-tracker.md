@@ -4,7 +4,7 @@ Daily Brief → Event Tracker → Monthly Review → Current Competitive View / 
 
 V2：Tracker 是证据 / 长期记忆层；[月报](monthly/README.md)是阶段性判断层。Tracker 只保留当前判断、观察重点和事件证据，不追加日报全文或周维护日志。已有首轮扫描记录作为初始化证据保留。
 
-- 创建：2026-09-07；最近维护：2026-09-08（V2 结构升级，未重新核验事件；首轮扫描覆盖限制见扫描记录）。
+- 创建：2026-09-07；最近维护：2026-09-11（周维护：新增 RD-002、IND-002 至 IND-005；复核既有 Active Signals）。
 - 时间口径：Asia/Shanghai；日期 YYYY-MM-DD，来源时间保留原时区。
 - 节奏：每日发现与去重，每周五沉淀过去 7 天日报及全部 Active Signals。
 - 入库：P0 和值得持续跟踪的 P1；P2 默认过滤。
@@ -12,7 +12,7 @@ V2：Tracker 是证据 / 长期记忆层；[月报](monthly/README.md)是阶段�
 
 ## Current Competitive View
 
-Last Reviewed: 2026-09-07
+Last Reviewed: 2026-09-11
 
 原则上在月结时复核和更新；只有重大 P0 的新增证据足以改变整体判断时，才允许周中调整。引用事件 ID、证据和判断日期，区分事实、推测、待验证假设。完成判断复核才更新 Last Reviewed，结构编辑或例行周维护不刷新该日期。月度变化及原因写入对应月报；周中 P0 调整在关联事件 Timeline 留下日期、原判断、新判断及依据，月结时回溯。
 
@@ -20,7 +20,7 @@ Last Reviewed: 2026-09-07
 | --- | --- | --- | --- |
 | RedotPay | 事实：披露香港两家子公司 AML/CFT 审查；推测：加强可对外展示的信任证据，尚不能推导全球合规或经营效果 | 审查范围、报告与整改披露 | RD-001 / 2026-09-07 |
 | KAST | 事实：Reserve 连接余额与会员奖励，每日游戏连接回访与消费；推测：同时争取余额留存和消费频次，实际增量未证实 | 奖励资格、成本、活动后持续消费 | KA-001、KA-002 / 2026-09-07 |
-| Industry | 事实：Ethena Pay 已公开推出；推测：发行生态开始自建消费者分发入口。单个案例不足以认定全行业趋势 | 底层资产、真实可用范围与实际使用规模 | IND-001 / 2026-09-07 |
+| Industry | 事实：消费者支付、商户直付、银行卡结算融资、社区银行接入和现金退出在同一周出现可核验进展；判断：竞争边界正在从单一 Crypto Card 扩大到 Stablecoin Distribution Infrastructure，但公开合作和试点尚不证明规模采用 | 各链路真实开放范围、交易规模、单位经济性及跨场景协同 | IND-001、IND-002、IND-003、IND-004、IND-005 / 2026-09-11 |
 
 趋势判断须说明证据支持什么、仍不确定什么、什么证据会改变判断。官宣不等于全面可用，相关性不等于因果，历史 Sykka 规划不等于当前已上线能力。
 
@@ -202,6 +202,158 @@ Ava Labs 于 9 月 1 日宣布 Ethena Pay 已推出，围绕 USDe 余额提供�
 - S1｜[Ethena Pay on Avalanche](https://www.avax.network/about/blog/ethena-pay-shows-how-avalanche-is-powering-the-next-generation-of-neobanks)｜Ava Labs 合作方公告｜发布 2026-09-01，查阅 2026-09-07｜支持上线及方向，非独立运营审计。
 - S2｜[Available Jurisdictions](https://pay.ethena.fi/jurisdictions)｜Ethena Pay 官方｜发布日期未标，查阅 2026-09-07｜当前列表 48；功能另有资格限制。
 - S3｜[Ethena Launches Ethena Pay](https://stablecoininsider.org/ethena-launches-ethena-pay-on-avalanche/)｜Stablecoin Insider｜发布 2026-09-02，查阅 2026-09-07｜仅用于记录来源口径差异。
+
+### RD-002｜RedotPay 与 BlockSec 签署 Web3 支付安全与合规研究合作框架
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-09-11
+- Last Updated: 2026-09-10
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+RedotPay 9 月 10 日公告称，双方已签署战略合作框架协议，计划围绕钱包与支付系统安全边界、支付合约和结算逻辑、威胁情报与恶意地址数据、链上交易监测、KYT 及 AML 的业务应用开展长期研究与交流。[S1]
+
+#### Timeline
+- 2026-09-09｜双方签署合作框架协议；公告正文以此为协议日期。[S1]
+- 2026-09-10｜RedotPay 发布合作公告，披露拟研究范围。[S1]
+
+#### Current Assessment
+- 事实：合作框架及拟研究范围已有 RedotPay 官方确认；Confirmed 仅适用于协议与披露范围。
+- 推测：RedotPay 正把信任建设从 AML/CFT 流程审查扩展到钱包、链上资金流和事件响应等支付安全议题。
+- 待验证假设：是否形成正式产品接入、审计、监控覆盖或事件响应能力；公告没有交付时间、量化目标或实施结果。
+
+#### Why It Matters to Sykka
+竞品正在把安全、合规和支付链路作为统一的合作方信任叙事。Sykka 可据此检查钱包、签名、资金来源与去向、异常定位和处置的可披露证据，不能将研究框架等同于已上线能力。
+
+#### Open Questions
+- [ ] 是否公布首个联合研究、产品接入、审计范围或交付时间？｜核验双方官方公告及产品更新｜出现正式成果时复查。
+
+#### Sources
+- S1｜[BlockSec and RedotPay Announce Strategic Partnership](https://www.redotpay.com/news/blocksec-and-redotpay-announce-strategic-partnership-to-study-security-and-compliance-in-stablecoin-payments)｜RedotPay 官方｜发布 2026-09-10，协议日期 2026-09-09，查阅 2026-09-11｜支持协议及研究范围；限制：合作方公告，未披露实施结果。
+
+### IND-002｜Visa 与 Credit Coop 将链上信贷用于稳定币卡日常结算融资
+
+- Priority: P0
+- Status: Confirmed
+- First Seen: 2026-09-11
+- Last Updated: 2026-09-08
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Visa 9 月 8 日披露，Credit Coop 使用稳定币计价循环信贷为卡项目每日 Visa 结算义务提供资金，并在获授权后接收 Visa 结算文件用于额度、放款和还款核验。Visa 称其 2026 财年第二季度已有 160 多个 stablecoin-linked card programs，支付量同比接近增长 200%，stablecoin settlement 年化运行率超过 200 亿美元；这些为 Visa 自报口径。[S1]
+
+#### Timeline
+- 2026-09-08｜Visa 公开结算融资结构、Rain 案例及网络规模数据。[S1]
+
+#### Current Assessment
+- 事实：Visa 已公开说明结算数据与链上信贷结合的融资结构；规模和表现数字为 Visa / Credit Coop 提供，未独立审计。
+- 推测：稳定币卡竞争开始延伸到结算周转资金与承销数据，资本效率可能成为项目扩张能力的一部分。
+- 待验证假设：该结构覆盖多少项目、实际成本和违约表现，以及对不同规模发行方的可复制性。
+
+#### Why It Matters to Sykka
+若 Sykka 扩展卡或支付项目，除用户侧功能外还需评估结算资金占用、授信数据、对账和流动性成本；宣传中的项目数量不能替代 Sykka 自身单位经济性验证。
+
+#### Open Questions
+- [ ] 160 多个项目、支付量和结算量的定义与地区构成是什么？｜核验 Visa 财报及方法说明｜月结复查。
+- [ ] Credit Coop 方案的准入、定价、额度和违约数据是否公开？｜核验双方后续披露｜出现新材料时复查。
+
+#### Sources
+- S1｜[Financing a hundred stablecoin-linked card programs](https://www.visa.com/en-us/thought-leadership/innovation/financing-stablecoin-linked-card-programs)｜Visa 官方｜更新 2026-09-08，查阅 2026-09-11｜支持结构与自报规模；限制：案例与数据由 Visa / Credit Coop 提供，文中部分数字注明需再次确认。
+
+### IND-003｜Avolta 在苏黎世机场试点钱包到钱包稳定币支付
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-09-11
+- Last Updated: 2026-09-09
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+全球旅行零售商 Avolta 宣布于 9 月 9–25 日在苏黎世机场 Level 2 Duty Free 门店开展试点，顾客可扫描二维码从数字钱包直接使用稳定币付款。[S1]
+
+#### Timeline
+- 2026-09-09｜Avolta 宣布并启动限店、限时试点。[S1]
+- 2026-09-25｜计划结束日期；实际结果待后续披露。[S1]
+
+#### Current Assessment
+- 事实：试点地点、时间和钱包直付方式已有商户官方确认。
+- 推测：商户直付正在测试绕开传统卡入口的消费者支付体验，但单店短期试点不足以证明规模需求或成本优势。
+- 待验证假设：支持币种、支付服务商、结算与退款机制、交易量及试点后是否扩展。
+
+#### Why It Matters to Sykka
+Distribution 的比较范围应同时覆盖卡消费和钱包直付。Sykka 可关注收银台接受度、退款体验、结算货币及商户成本，避免只按支付入口判断优劣。
+
+#### Open Questions
+- [ ] 试点使用哪些稳定币、链和服务商？｜核验 Avolta 及合作方说明｜试点期内复查。
+- [ ] 9 月 25 日后是否披露交易量、用户反馈或扩展计划？｜核验官方总结｜试点结束后复查。
+
+#### Sources
+- S1｜[Avolta launches first direct wallet-to-wallet stablecoin payments pilot](https://www.avoltaworld.com/en/press_release/2026-09-09/avolta-launches-first-direct-wallet-wallet-stablecoin-payments-pilot)｜Avolta 官方｜发布 2026-09-09，查阅 2026-09-11｜支持试点范围；限制：未取得交易和效果数据。
+
+### IND-004｜MoneyGram 在哥伦比亚上线稳定币支持的 Visa 数字卡
+
+- Priority: P0
+- Status: Developing
+- First Seen: 2026-09-11
+- Last Updated: 2026-09-10
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+The Block 报道称，MoneyGram 已在哥伦比亚推出首张稳定币支持的 Visa 数字卡，符合条件的用户可持有稳定美元余额、通过 Visa 消费，并将余额转给自己后到 MoneyGram 网点提取本币。产品由 Rain、Crossmint 和 Stellar 支持，上线时使用 USDC，MGUSD 支持及拉美扩展属于后续计划。[S1]
+
+#### Timeline
+- 2026-09-10｜媒体发布产品细节并引用 MoneyGram 发言人；MoneyGram 官网新闻列表尚未找到对应新闻稿。[S1][S2]
+
+#### Current Assessment
+- 事实：可信媒体报道并引用公司发言人说明哥伦比亚首发、数字卡和现金提取路径；尚缺 MoneyGram 独立新闻稿或实际产品测试，因此状态为 Developing。
+- 推测：传统汇款网络正把稳定币余额、卡消费和线下现金退出连接成同一消费者分发链路。
+- 待验证假设：实际可申请范围、费用与限额、现金提取体验、交易规模，以及 MGUSD 和其他拉美市场上线时间。
+
+#### Why It Matters to Sykka
+该模式把 App 余额、全球卡网络和线下现金网络组合在一起，直接体现 Distribution 的多出口竞争。Sykka 需要分别比较数字消费、银行转账和现金退出的覆盖与成本。
+
+#### Open Questions
+- [ ] MoneyGram 是否发布官方产品页、资格、费率和限额？｜核验官网及哥伦比亚 App｜出现官方材料时复查。
+- [ ] MGUSD、实体卡及其他拉美市场何时上线？｜核验 MoneyGram、Rain、Visa 后续公告｜月结复查。
+
+#### Sources
+- S1｜[MoneyGram launches first stablecoin-backed Visa card in Colombia](https://www.theblock.co/news/business/2026-09-10-moneygram-card-stablecoin-visa-colombia-414137)｜The Block｜发布 2026-09-10，查阅 2026-09-11｜支持产品细节并引用公司发言人；限制：二手报道，部分未来计划未给具体日期。
+- S2｜[MoneyGram Newsroom](https://corporate.moneygram.com/news)｜MoneyGram 官方｜查阅 2026-09-11｜用于检查官方披露；限制：当前列表未见对应新闻稿，不能据此认定不存在。
+
+### IND-005｜Coinbase 与 Moov 将稳定币支付能力接入美国社区金融机构
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-09-11
+- Last Updated: 2026-09-10
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Coinbase 9 月 10 日宣布与 Moov 合作，将稳定币支付接受、结算和实时资金能力接入 Moov 现有支付平台。Moov 的客户基础包含 1,000 多家美国社区银行和信用合作社；技术路径包括 Coinbase CDP 托管钱包账户和 Payments API。[S1]
+
+#### Timeline
+- 2026-09-10｜Coinbase 发布合作范围、技术分工和目标机构基础。[S1]
+
+#### Current Assessment
+- 事实：双方合作、产品集成方向及 Moov 自报客户基础已有 Coinbase 官方披露。
+- 推测：稳定币分发正进入传统金融机构已有的收单、发卡和实时支付系统，降低单家机构自建门槛。
+- 待验证假设：有多少机构实际启用、上线时间、终端用户覆盖、交易规模及成本优势；“可接入 1,000 多家”不等于全部已上线。
+
+#### Why It Matters to Sykka
+竞争入口不再局限于加密原生 App。Sykka 的分发判断需关注现有金融机构和支付平台能否快速嵌入稳定币能力，以及这些渠道对获客、信任和商户覆盖的影响。
+
+#### Open Questions
+- [ ] 首批实际启用机构、时间表和产品资格是什么？｜核验 Coinbase、Moov 及参与银行公告｜出现上线名单时复查。
+- [ ] 是否披露支付量、商户使用和结算成本？｜核验后续案例及数据｜月结复查。
+
+#### Sources
+- S1｜[Coinbase brings stablecoin payments and custody to community banks and credit unions, in partnership with Moov](https://www.coinbase.com/blog/coinbase-brings-stablecoin-payments-and-custody-to-community-banks-and-credit-unions)｜Coinbase 官方｜发布 2026-09-10，查阅 2026-09-11｜支持合作范围、技术路径及 Moov 客户基础；限制：未提供已上线机构数和实际使用数据。
 
 ### Active Signal 复制模板
 
