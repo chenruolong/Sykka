@@ -17,6 +17,8 @@
 4. 上月月报的 Next Month Watchlist（即报告月份的观察清单）：逐项检验结果。首次运行没有上月月报时写“无历史基线”，不得事后补造。
 5. 事件原始来源、用户反馈和实际取得的数据：注明来源、日期、国家 / 平台 / 样本、统计口径及限制；不可访问或未取得的数据写待确认。
 
+6. [Competitor Activity](../activity/README.md) 的周度总结及底表：用于识别 RedotPay / KAST 的 Messaging、Theme、Campaign、互动和官网变化 Pattern；引用 Content ID、周报与 Coverage，不把普通 Activity 自动升级为事件，也不逐条复制 Activity Log。
+
 优先使用月末截止前的证据；若最新 Tracker 含期后更新，通过 Timeline 和历史提交还原期末状态。新闻转载不算独立证据，官方声明不等于实际效果，用户投诉不直接证明故障规模或原因。
 
 ## 固定月报结构

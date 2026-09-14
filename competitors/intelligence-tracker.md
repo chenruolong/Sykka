@@ -1,6 +1,8 @@
 # Sykka Competitive Intelligence Tracker
 
-Daily Brief → Event Tracker → Monthly Review → Current Competitive View / Monthly Watchlist。维护对象是事件及证据，不是新闻篇数。
+Competitive Intelligence：Daily Intelligence → Event Tracker → Monthly Review → Current Competitive View / Monthly Watchlist。维护对象是事件及证据，不是新闻篇数。
+
+Competitor Activity：Daily Activity → Activity Log → Weekly Pattern；只有重要 Pattern 达到 P0/P1 事件门槛或对已有事件形成实质 UPDATE 时，才进入 Event Tracker。
 
 V2：Tracker 是证据 / 长期记忆层；[月报](monthly/README.md)是阶段性判断层。Tracker 只保留当前判断、观察重点和事件证据，不追加日报全文或周维护日志。已有首轮扫描记录作为初始化证据保留。
 
@@ -49,6 +51,8 @@ RedotPay、KAST 为核心，覆盖产品、市场、增长、商业化、体验�
 | 深挖来源 | Help Center、Fee Schedule、Terms、API / Changelog、合作方及发卡机构公告 |
 
 官方来源只确认其明确声明的内容。转载同一公告不算独立验证。Sensor Tower 使用实际取得的导出或截图，不假设自动读取付费账号；App 留存不等于卡消费留存。
+
+普通官方社媒发帖、品牌内容、产品教育、Campaign 和常规互动由 [Competitor Activity Monitoring](activity/README.md) 独立记录，不因发布本身进入本 Tracker。只有形成重要竞争信号、满足 P0/P1 事件标准、构成已有事件的实质 UPDATE，或出现需及时核验的重要异常时，才在本 Tracker 建立或更新 RD / KA / IND 事件；引用相关 Content ID 和周报，不复制 Activity 明细。
 
 ## 事件编号规则
 
