@@ -1,20 +1,13 @@
 # Sykka 竞品情报
 
-本目录包含两条相互连接、职责独立的监控链路。
+本目录维护一条从日常发现到周度沉淀、再到月度复盘的竞品情报链路。
 
-| 链路 | 核心问题 | 主要产物 | 升级条件 |
-| --- | --- | --- | --- |
-| Competitive Intelligence | 是否出现足以改变竞争判断的新事实？ | [Event Tracker](intelligence-tracker.md)、[Monthly Review](monthly/README.md) | P0 / P1 NEW 或实质 UPDATE |
-| Competitor Activity | 竞品每天对外做什么、说什么、用户对什么有反应？ | [Activity Log](activity/activity-log.csv)、[Coverage Log](activity/coverage-log.csv)、[Weekly Pattern](activity/weekly/README.md) | 连续 Pattern、重大 Messaging Shift、重要增长玩法、关键官网变化或与已有事件形成实质关联 |
-
-允许同一事实出现在两条链路中，但分析对象不同。例如合作公告可作为 Activity 记录其传播动作，同时作为 Intelligence 事件记录合作事实。通过 Content ID 与 RD / KA / IND ID 建立关联，不为避免重复而删除任一层必要证据。
+核心问题是：是否出现足以改变 Sykka 产品、市场或竞争判断的新事实？主要产物为 [Event Tracker](intelligence-tracker.md) 和 [Monthly Review](monthly/README.md)。只有 P0 / P1 的 NEW 或实质 UPDATE 才进入 Tracker；普通社媒发帖、品牌内容、产品教育、Campaign 和常规互动不在本体系范围内。
 
 ## 调度关系
 
-1. 08:30 Intelligence Daily：发现并筛选 P0 / P1 事件。
-2. 09:00 Activity Daily：扫描 RedotPay / KAST 的 X 与官网，更新 Activity 与 Coverage。
-3. 周五 16:30 Activity Weekly：从过去 7 天记录中识别 Pattern。
-4. 周五 17:00 Intelligence Weekly：消费周度 Pattern，判断是否建立或更新 RD / KA / IND。
-5. 月结：结合事件 Tracker、Watchlist、Activity 周度总结及其他已核验数据形成 Monthly Review。
+1. 每日 08:30 Intelligence Daily：检查前一自然日，发现并筛选 P0 / P1 候选；输出日报，不修改 GitHub。
+2. 周五 17:00 Intelligence Weekly：整理过去 7 天日报，核验原始来源并去重，将合格的 NEW / UPDATE 增量写入 RD / KA / IND Tracker。
+3. 每月月初 Monthly Review：回测上月 Watchlist，结合 Tracker、日报、周维护结果及其他已核验数据生成上月月报，并同步 Current Competitive View、Monthly Watchlist 和事件引用。
 
-调度时间使用 Asia/Shanghai。本文描述目标工作流，不单独证明每个自动任务已启用；任务状态以调度器中的当前配置和运行记录为准。
+调度时间使用 Asia/Shanghai。周维护保留全部既有事件和历史，只更新事件证据与状态；Current Competitive View 原则上在月结更新，只有重大 P0 新证据足以改变整体判断时才允许周中调整。本文描述目标工作流，不单独证明每个自动任务已启用；任务状态以调度器中的当前配置和运行记录为准。
