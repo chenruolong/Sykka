@@ -4,7 +4,7 @@ Competitive Intelligence：Daily Intelligence → Weekly Maintenance → Event T
 
 V2：Tracker 是证据 / 长期记忆层；[月报](monthly/README.md)是阶段性判断层。Tracker 只保留当前判断、观察重点和事件证据，不追加日报全文或周维护日志。已有首轮扫描记录作为初始化证据保留。
 
-- 创建：2026-09-07；最近维护：2026-09-11（周维护：新增 RD-002、IND-002 至 IND-005；复核既有 Active Signals）。
+- 创建：2026-09-07；最近维护：2026-09-20（周维护补跑：新增 RD-003、IND-006 至 IND-008；复核既有 Active Signals）。
 - 时间口径：Asia/Shanghai；日期 YYYY-MM-DD，来源时间保留原时区。
 - 节奏：每日发现与去重，每周五沉淀过去 7 天日报及全部 Active Signals。
 - 入库：P0 和值得持续跟踪的 P1；P2 默认过滤。
@@ -235,6 +235,40 @@ RedotPay 9 月 10 日公告称，双方已签署战略合作框架协议，计�
 #### Sources
 - S1｜[BlockSec and RedotPay Announce Strategic Partnership](https://www.redotpay.com/news/blocksec-and-redotpay-announce-strategic-partnership-to-study-security-and-compliance-in-stablecoin-payments)｜RedotPay 官方｜发布 2026-09-10，协议日期 2026-09-09，查阅 2026-09-11｜支持协议及研究范围；限制：合作方公告，未披露实施结果。
 
+### RD-003｜RedotPay 暂停韩国用户申请实体卡和虚拟卡
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-09-16
+- Last Updated: 2026-09-15
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+首尔经济日报 9 月 15 日报道，RedotPay 已暂停韩国用户申请新的实体卡和虚拟卡，韩国用户在 App 申请时会看到该地区暂不可申请的提示；报道同时称 RedotPay 已于 9 月 7 日停止韩国当地合作伙伴及 KOL 的 Affiliate / Referral 获客活动。[S1]
+
+RedotPay 当前通用 Card Issuance Restrictions 页面未将 South Korea 列入限制地区，因此现有公开证据更接近韩国专项限制，而不是通用限制名单更新。[S2]
+
+#### Timeline
+- 2026-09-07｜据首尔经济日报报道，RedotPay 停止韩国当地 Affiliate / Referral 获客活动；尚未取得 RedotPay 官方说明。[S1]
+- 2026-09-15｜当地财经媒体确认韩国用户无法新申请实体卡和虚拟卡；限制起始日、原因和期限待确认。[S1]
+
+#### Current Assessment
+- 事实：可信当地财经媒体报道韩国用户的新卡申请受限；RedotPay 通用限制页目前未列 South Korea。
+- 推测：获客活动先停止、随后新卡申请受限，可能反映韩国市场的专项合规或运营收缩；现有证据不足以确认原因。
+- 待验证假设：限制是否为临时措施、是否影响已有持卡人、何时恢复，以及是否与韩国税务或监管环境直接相关。
+
+#### Why It Matters to Sykka
+核心竞品在单一市场同时收缩获客和新卡可用性，提示市场进入判断不能只看通用地区清单，还需核验 App 实际申请路径、当地合作渠道和专项限制。当前证据不支持将该事件外推为 RedotPay 全球收缩。
+
+#### Open Questions
+- [ ] RedotPay 是否发布韩国专项说明、原因、影响范围和恢复条件？｜验证方式：官方 Help Center、App 提示、合作伙伴通知｜出现官方材料时复查。
+- [ ] 已有韩国虚拟卡和实体卡是否仍可使用、充值和续卡？｜验证方式：官方客服说明与韩国用户可复核记录｜月结复查。
+
+#### Sources
+- S1｜[Hong Kong Crypto Card RedotPay Halts New Signups in Korea](https://en.sedaily.com/finance/2026/09/15/hong-kong-crypto-card-redotpay-halts-new-signups-in-korea)｜首尔经济日报 / 当地财经媒体｜发布日期：2026-09-15｜查阅日期：2026-09-20｜支持：韩国新实体卡和虚拟卡申请受限、9 月 7 日停止当地 Affiliate / Referral｜限制：基于行业消息源和 App 现象，未取得 RedotPay 官方原因说明；英文版为 AI 翻译。
+- S2｜[Card Issuance Restrictions](https://helpcenter.redotpay.com/en/articles/14254838-card-issuance-restrictions)｜RedotPay 官方 Help Center｜页面未标发布日期，查阅日期：2026-09-20｜支持：当前通用限制名单未列 South Korea｜限制：不能据此排除地区专项或 App 内临时限制。
+
 ### IND-002｜Visa 与 Credit Coop 将链上信贷用于稳定币卡日常结算融资
 
 - Priority: P0
@@ -356,6 +390,101 @@ Coinbase 9 月 10 日宣布与 Moov 合作，将稳定币支付接受、结算�
 
 #### Sources
 - S1｜[Coinbase brings stablecoin payments and custody to community banks and credit unions, in partnership with Moov](https://www.coinbase.com/blog/coinbase-brings-stablecoin-payments-and-custody-to-community-banks-and-credit-unions)｜Coinbase 官方｜发布 2026-09-10，查阅 2026-09-11｜支持合作范围、技术路径及 Moov 客户基础；限制：未提供已上线机构数和实际使用数据。
+
+### IND-006｜Circle Arc 公共主网上线并原生连接支付与外汇基础设施
+
+- Priority: P0
+- Status: Confirmed
+- First Seen: 2026-09-17
+- Last Updated: 2026-09-16
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Circle 9 月 16 日宣布 Arc 公共主网上线。Arc 是面向金融市场、实时资金流动和支付场景的 L1，原生集成 USDC、Circle Payments Network 和 StableFX；Circle 称首日有 100 多个应用及 100 多家机构与生态建设者参与，并由 Visa、Mastercard、MoneyGram、Standard Chartered 等机构组成创始验证者阵容。[S1]
+
+#### Timeline
+- 2026-08-05｜Circle 预告 9 月 16 日公共主网上线并公布创始验证者及集成方；属于上线前背景。[S2]
+- 2026-09-16｜Arc 公共主网正式上线，Circle 披露首日集成、建设者和产品套件。[S1]
+
+#### Current Assessment
+- 事实：Arc 公共主网、原生 Circle Payments Network / StableFX 集成及首日参与名单已由 Circle 官方披露。
+- 推测：Circle 正把稳定币、外汇、跨境支付和结算能力进一步整合到统一基础设施层，可能降低分发产品组合这些能力的集成门槛。
+- 待验证假设：首日参与者中实际生产上线的比例、支付与跨境交易规模、费用和可靠性；官方参与名单不等于形成规模采用。
+
+#### Why It Matters to Sykka
+竞争不只来自消费者 App，也来自将稳定币、FX、跨境支付和结算组合成基础设施的平台。Sykka 需要区分可接入能力、真实生产可用和规模采用，评估哪些底层能力适合合作而非自建。
+
+#### Open Questions
+- [ ] Arc 上实际生产运行的支付应用、交易量、费用和可用地区是什么？｜验证方式：Circle、合作方产品页与链上数据口径｜月结复查。
+- [ ] CPN 与 StableFX 在 Arc 上的开放资格、结算路径和合规边界是什么？｜验证方式：官方产品文档与客户案例｜出现详细文档时复查。
+
+#### Sources
+- S1｜[Circle Launches Arc Mainnet, an Economic Operating System for the Internet](https://www.circle.com/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet)｜Circle 官方｜发布日期：2026-09-16｜查阅日期：2026-09-20｜支持：公共主网上线、原生集成、参与者及产品方向｜限制：参与规模与网络表现为 Circle 自报，未独立验证实际采用。
+- S2｜[Circle Announces Founding Validator Cohort and Major Integrations for Arc Ahead of September 16 Mainnet Launch](https://www.circle.com/pressroom/circle-announces-founding-validator-cohort-and-major-integrations-for-arc-ahead-of-september-16-mainnet-launch)｜Circle 官方｜发布日期：2026-08-05｜查阅日期：2026-09-20｜支持：上线前计划、验证者和合作背景｜限制：预告不代表当时已公开上线。
+
+### IND-007｜Wirex One 在 Arc 上结束封闭测试并公开上线
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-09-17
+- Last Updated: 2026-09-16
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Wirex 9 月 16 日宣布 Wirex One 向公众上线，并作为 Arc 主网首日合作产品。官方称产品将稳定币账户、链上资产控制和卡消费体验组合在一个应用中，封闭测试自 6 月以来累计超过 20,000 名用户；“globally available”附带地区限制。[S1]
+
+#### Timeline
+- 2026-04-29｜Wirex 发布 Litepaper 并预告 Wirex One，属于上线前背景。[S2]
+- 2026-09-16｜Wirex One 结束封闭测试并公开上线；20,000+ 为 beta 累计测试用户，不是上线后活跃用户。[S1]
+
+#### Current Assessment
+- 事实：Wirex One 已由 Wirex 官方宣布公开上线，并披露 beta 测试规模及 Arc 集成。
+- 推测：Wirex 正把 stablecoin balance、account、card 和链上资产控制整合为面向消费者的产品入口，与 Sykka 的 Distribution 方向存在较高能力重叠。
+- 待验证假设：真实开放国家、正式上线后的活跃和付费用户、资金与卡链路体验、留存和单位经济性。
+
+#### Why It Matters to Sykka
+雷达竞品已从产品预告进入公开交付阶段。后续比较应聚焦真实地区资格、账户到消费的完整路径、用户采用和会员经济性，而不是只比较功能清单或 beta 用户数。
+
+#### Open Questions
+- [ ] Wirex One 的实际开放国家、资格、费用、限额和卡发行范围是什么？｜验证方式：产品条款、Help Center 与 App 实测｜月结复查。
+- [ ] 20,000+ beta 用户中有多少迁移为正式活跃用户？｜验证方式：官方经营披露或可复核数据｜出现数据时复查。
+
+#### Sources
+- S1｜[Wirex One Launches Publicly on Arc, Bringing Stablecoin Private Banking to the Mass Affluent Market](https://www.wirexapp.com/post/wirex-one-launches-publicly-on-arc-bringing-stablecoin-private-banking-to-the-mass-affluent-market)｜Wirex 官方 Blog｜发布日期：2026-09-16｜查阅日期：2026-09-20｜支持：公开上线、Arc 首日合作、20,000+ beta 用户及产品定位｜限制：官方自报；“global”附地区限制，未提供正式上线后的使用数据。
+- S2｜[Introducing Wirex's New Litepaper and the Upcoming Launch of Wirex One](https://www.wirexapp.com/post/introducing-wirex-s-new-litepaper-and-the-upcoming-launch-of-wirex-one)｜Wirex 官方｜发布日期：2026-04-29，更新 2026-07-22｜查阅日期：2026-09-20｜支持：上线前产品预告和技术定位｜限制：历史背景，不代表当时已公开上线。
+
+### IND-008｜dtcpay 完成 2,500 万美元 Series A 并引入 SBI Group
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-09-19
+- Last Updated: 2026-09-18
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+dtcpay 9 月 18 日宣布完成总额 2,500 万美元的 Series A，SBI Group 通过 SBI Ventures Asset 及 SBI-NTU-Kyobo Digital Innovation Fund 参与；该轮最初由 Vertex Ventures Southeast Asia & India 于 2026 年 4 月领投。dtcpay 表示资金将用于扩展产品套件、企业端 Business Portal、消费者功能和商户网络。[S1]
+
+#### Timeline
+- 2026-04｜Vertex Ventures Southeast Asia & India 领投该轮早期部分；本轮只作融资背景。[S1]
+- 2026-09-18｜dtcpay 宣布 Series A 总额达到 2,500 万美元并引入 SBI Group 等投资者。[S1]
+
+#### Current Assessment
+- 事实：融资轮总额、投资者和计划用途由 dtcpay 新闻稿确认；2,500 万美元是整轮累计规模，不是 SBI 单独投资额。
+- 推测：资金与 SBI 的日本金融网络可能支持 dtcpay 扩大产品、商户分发和日本—东南亚合作，但当前仍是战略方向。
+- 待验证假设：SBI 的具体投资额、双方实际推出的支付产品或走廊、商户网络扩张和业务规模。
+
+#### Why It Matters to Sykka
+dtcpay 同时覆盖 stablecoin / fiat 收款、余额、卡消费和商户场景；融资用途明确指向产品及分发扩张。Sykka 可持续观察其企业端、商户网络和日本—东南亚走廊是否形成真实上线与采用。
+
+#### Open Questions
+- [ ] SBI 的具体投资额、合作范围和首个落地项目是什么？｜验证方式：dtcpay、SBI 官方后续公告｜出现产品或走廊上线时复查。
+- [ ] Business Portal、消费者功能和商户网络扩张的时间表与采用数据是什么？｜验证方式：产品更新、商户案例及经营披露｜月结复查。
+
+#### Sources
+- S1｜[dtcpay Welcomes SBI Group as Strategic Investor, Extending Series A to US$25M](https://www.prnewswire.com/apac/news-releases/dtcpay-welcomes-sbi-group-as-strategic-investor-extending-series-a-to-us25m-302881922.html)｜dtcpay 新闻稿 / PR Newswire｜发布日期：2026-09-18｜查阅日期：2026-09-20｜支持：整轮规模、投资者、资金用途与合作方向｜限制：公司声明；未披露 SBI 单独投资额、落地时间及经营效果。
 
 ### Active Signal 复制模板
 
