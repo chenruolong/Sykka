@@ -4,7 +4,7 @@ Competitive Intelligence：Daily Intelligence → Weekly Maintenance → Event T
 
 V2：Tracker 是证据 / 长期记忆层；[月报](monthly/README.md)是阶段性判断层。Tracker 只保留当前判断、观察重点和事件证据，不追加日报全文或周维护日志。已有首轮扫描记录作为初始化证据保留。
 
-- 创建：2026-09-07；最近维护：2026-09-20（周维护补跑：新增 RD-003、IND-006 至 IND-008；复核既有 Active Signals）。
+- 创建：2026-09-07；最近维护：2026-09-28（周维护写入重试：新增 RD-004、IND-009、IND-010；复核既有 Active Signals）。
 - 时间口径：Asia/Shanghai；日期 YYYY-MM-DD，来源时间保留原时区。
 - 节奏：每日发现与去重，每周五沉淀过去 7 天日报及全部 Active Signals。
 - 入库：P0 和值得持续跟踪的 P1；P2 默认过滤。
@@ -269,6 +269,36 @@ RedotPay 当前通用 Card Issuance Restrictions 页面未将 South Korea 列入
 - S1｜[Hong Kong Crypto Card RedotPay Halts New Signups in Korea](https://en.sedaily.com/finance/2026/09/15/hong-kong-crypto-card-redotpay-halts-new-signups-in-korea)｜首尔经济日报 / 当地财经媒体｜发布日期：2026-09-15｜查阅日期：2026-09-20｜支持：韩国新实体卡和虚拟卡申请受限、9 月 7 日停止当地 Affiliate / Referral｜限制：基于行业消息源和 App 现象，未取得 RedotPay 官方原因说明；英文版为 AI 翻译。
 - S2｜[Card Issuance Restrictions](https://helpcenter.redotpay.com/en/articles/14254838-card-issuance-restrictions)｜RedotPay 官方 Help Center｜页面未标发布日期，查阅日期：2026-09-20｜支持：当前通用限制名单未列 South Korea｜限制：不能据此排除地区专项或 App 内临时限制。
 
+### RD-004｜RedotPay 获得美国两项州级贷款牌照
+
+- Priority: P0
+- Status: Confirmed
+- First Seen: 2026-09-23
+- Last Updated: 2026-09-23
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+RedotPay 9 月 23 日宣布，其美国实体 Red Dot Lending (US), LLC 已获得 Idaho Regulated Lender License 和 Nebraska Installment Loan Company License，并有 20 多项其他州牌照申请推进中。公司称两项牌照将支持其未来在美国推出特定贷款产品；公告不代表产品已经上线或美国用户已经可用。[S1]
+
+#### Timeline
+- 2026-09-23｜RedotPay 公布首两项美国州级贷款牌照及 20 多项其他州申请。[S1]
+
+#### Current Assessment
+- 事实：两项州级贷款牌照、持牌实体及其他州申请数量由 RedotPay 官方确认；牌照用途指向未来贷款产品。
+- 推测：RedotPay 正从支付与汇款牌照延伸到信贷能力，为美国市场的账户、支付和贷款组合建立监管基础。
+- 待验证假设：其他州申请的获批节奏、产品上线时间、用户资格、资金来源、定价与实际采用。
+
+#### Why It Matters to Sykka
+核心竞品正在美国同时布局资金移动与贷款监管能力，竞争范围可能从稳定币支付入口扩展到受监管的支付与信贷组合。Sykka 需要关注其真实开放范围和产品交付，不能把牌照获批等同于业务已经上线。
+
+#### Open Questions
+- [ ] 20 多项州级申请分别覆盖哪些州和牌照类型？｜验证方式：NMLS、州监管机构与 RedotPay 后续公告｜出现审批结果时复查。
+- [ ] Idaho、Nebraska 的贷款产品何时上线，面向哪些用户及资金场景？｜验证方式：产品条款、Help Center 与 App 实测｜产品发布时复查。
+
+#### Sources
+- S1｜[We’ve Expanded Our US Licensing Footprint, Obtaining Two State Lending Licenses](https://www.redotpay.com/news/weve-expanded-our-us-licensing-footprint-obtaining-two-state-lending-licenses)｜RedotPay 官方｜发布日期：2026-09-23｜查阅日期：2026-09-28｜支持：持牌实体、Idaho 与 Nebraska 两项牌照、20 多项其他州申请及未来用途｜限制：公司声明；未披露其他州清单、产品时间表或经营结果。
+
 ### IND-002｜Visa 与 Credit Coop 将链上信贷用于稳定币卡日常结算融资
 
 - Priority: P0
@@ -485,6 +515,67 @@ dtcpay 同时覆盖 stablecoin / fiat 收款、余额、卡消费和商户场景
 
 #### Sources
 - S1｜[dtcpay Welcomes SBI Group as Strategic Investor, Extending Series A to US$25M](https://www.prnewswire.com/apac/news-releases/dtcpay-welcomes-sbi-group-as-strategic-investor-extending-series-a-to-us25m-302881922.html)｜dtcpay 新闻稿 / PR Newswire｜发布日期：2026-09-18｜查阅日期：2026-09-20｜支持：整轮规模、投资者、资金用途与合作方向｜限制：公司声明；未披露 SBI 单独投资额、落地时间及经营效果。
+
+### IND-009｜SoFi 与 Mastercard 上线 SoFiUSD 卡结算
+
+- Priority: P0
+- Status: Confirmed
+- First Seen: 2026-09-22
+- Last Updated: 2026-09-22
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+SoFi 与 Mastercard 9 月 22 日宣布，SoFi Bank 的借记卡和信用卡项目已上线使用 SoFiUSD 的稳定币结算，并正在把完整卡项目迁移到该结算方式。公告称该项目预计处理超过 250 亿美元年化交易量；该数字是前瞻预期，不是已完成的稳定币结算量。[S1]
+
+#### Timeline
+- 2026-09-22｜SoFiUSD 在 SoFi Bank 借记卡和信用卡项目中上线链上结算，完整卡项目开始迁移。[S1]
+
+#### Current Assessment
+- 事实：稳定币结算已在 SoFi 卡项目上线，SoFiUSD 由受 OCC 监管的 national bank 发行；250 亿美元为项目年化交易量预期。
+- 推测：受监管银行发行稳定币与全球卡网络开始从试验进入生产结算，可能压缩结算时间并扩大银行发行稳定币的支付用途。
+- 待验证假设：迁移完成比例、真实稳定币结算量、结算成本、商户覆盖及对跨境支付和汇款的后续扩展。
+
+#### Why It Matters to Sykka
+银行、稳定币发行与卡网络结算被整合进同一生产链路，强化了 Stablecoin Distribution Infrastructure 的竞争方向。Sykka 应分别比较发行主体、结算效率、商户侧体验和单位经济性，不能把项目总交易量直接当作稳定币采用量。
+
+#### Open Questions
+- [ ] 完整卡项目迁移何时完成，实际由 SoFiUSD 结算的金额和占比是多少？｜验证方式：SoFi / Mastercard 后续经营披露｜月结复查。
+- [ ] 商户即时到账、零成本提现及后续跨境场景的开放范围和经济性是什么？｜验证方式：产品条款、商户案例与财报｜出现正式产品披露时复查。
+
+#### Sources
+- S1｜[SoFi Becomes First National Bank to Go Live with Stablecoin Settlement across Mastercard’s Global Payments Network](https://investors.sofi.com/news/news-details/2026/SoFi-Becomes-First-National-Bank-to-Go-Live-with-Stablecoin-Settlement-across-Mastercards-Global-Payments-Network/default.aspx)｜SoFi 与 Mastercard 联合公告 / SoFi 投资者关系｜发布日期：2026-09-22｜查阅日期：2026-09-28｜支持：生产上线、完整卡项目迁移、SoFiUSD 发行主体及超过 250 亿美元年化交易量预期｜限制：公司声明；交易量为前瞻预期，未披露实际稳定币结算金额、成本或迁移完成度。
+
+### IND-010｜Reap 与 Visa 将稳定币信用卡项目扩展至 100+ 市场
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-09-23
+- Last Updated: 2026-09-23
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Reap 与 Visa 9 月 23 日联合宣布战略合作，计划通过 Reap 的发卡基础设施把稳定币关联 Visa 信用卡项目带到 100 多个市场，并从亚洲和拉丁美洲扩展至 EMEA 和非洲。Reap 提供授权、处理、合规框架和运营，并已在亚太以稳定币直接向 Visa 结算；“100+ 市场”是合作覆盖目标，不代表所有市场已经上线。[S1][S2]
+
+#### Timeline
+- 2026-09-23｜Visa 与 Reap 公布 100+ 市场合作目标、基础设施范围及亚太稳定币结算关系。[S1][S2]
+
+#### Current Assessment
+- 事实：双方已联合发布合作，披露发卡基础设施范围、区域扩展方向及 Reap 参与 Visa 亚太稳定币结算。
+- 推测：稳定币卡基础设施正在从单点发卡扩展为跨地区的授权、处理、合规、运营与结算组合。
+- 待验证假设：已实际开放的国家、各地持牌与发卡主体、客户项目数量、上线节奏、交易规模和单位经济性。
+
+#### Why It Matters to Sykka
+跨市场卡项目可以通过单一基础设施伙伴组合发卡、合规和结算能力，可能降低多地区分发门槛。Sykka 需要按已上线国家与真实项目验证覆盖，而不是把全球合作目标当作现有可用范围。
+
+#### Open Questions
+- [ ] 100+ 市场中哪些已经上线，哪些仍为计划，分别由谁持牌和发卡？｜验证方式：Visa / Reap 产品清单、条款与合作方公告｜每次新增市场时复查。
+- [ ] Reap 的稳定币结算、授权和处理组合带来何种资金效率与实际采用？｜验证方式：客户案例、交易数据及产品条款｜出现量化披露时复查。
+
+#### Sources
+- S1｜[Reap and Visa Collaborate to Launch Stablecoin Card Programs Across 100+ Markets](https://www.visa.com.sg/about-visa/newsroom/press-releases/reap-and-visa-collaborate-to-launch-stablecoin-card-programs-across-100-markets.html)｜Visa 官方 / 联合公告｜发布日期：2026-09-23｜查阅日期：2026-09-28｜支持：合作、100+ 市场目标、基础设施范围、区域扩展及亚太稳定币结算｜限制：100+ 为合作目标，未列出逐国上线状态、客户数量或交易数据。
+- S2｜[Reap and Visa Collaborate to Launch Stablecoin Card Programs Across 100+ Markets](https://reap.global/newsroom/reap-visa-launch-100-markets-stablecoin-card-program)｜Reap 官方 / 联合公告｜发布日期：2026-09-23｜查阅日期：2026-09-28｜支持：合作范围、产品能力与结算关系｜限制：与 Visa 公告为同一联合披露，不构成独立验证；部分增长数据引用第三方或公司自报。
 
 ### Active Signal 复制模板
 
