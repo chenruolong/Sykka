@@ -4,7 +4,7 @@ Competitive Intelligence：Daily Intelligence → Weekly Maintenance → Event T
 
 V2：Tracker 是证据 / 长期记忆层；[月报](monthly/README.md)是阶段性判断层。Tracker 只保留当前判断、观察重点和事件证据，不追加日报全文或周维护日志。已有首轮扫描记录作为初始化证据保留。
 
-- 创建：2026-09-07；最近维护：2026-09-28（周维护写入重试：新增 RD-004、IND-009、IND-010；复核既有 Active Signals）。
+- 创建：2026-09-07；最近维护：2026-10-08（补充维护 2026-09-29 至 2026-10-07 日报：新增 IND-011 至 IND-018，更新 RD-004；复核既有 Active Signals）。
 - 时间口径：Asia/Shanghai；日期 YYYY-MM-DD，来源时间保留原时区。
 - 节奏：每日发现与去重，每周五沉淀过去 7 天日报及全部 Active Signals。
 - 入库：P0 和值得持续跟踪的 P1；P2 默认过滤。
@@ -274,20 +274,21 @@ RedotPay 当前通用 Card Issuance Restrictions 页面未将 South Korea 列入
 - Priority: P0
 - Status: Confirmed
 - First Seen: 2026-09-23
-- Last Updated: 2026-09-23
+- Last Updated: 2026-10-02
 - Monthly Review: 无（尚无已核验的月报引用）
-- 本轮判定：NEW
+- 本轮判定：UPDATE（2026-10-02 新增收购扩张计划）
 
 #### What Happened
 RedotPay 9 月 23 日宣布，其美国实体 Red Dot Lending (US), LLC 已获得 Idaho Regulated Lender License 和 Nebraska Installment Loan Company License，并有 20 多项其他州牌照申请推进中。公司称两项牌照将支持其未来在美国推出特定贷款产品；公告不代表产品已经上线或美国用户已经可用。[S1]
 
 #### Timeline
 - 2026-09-23｜RedotPay 公布首两项美国州级贷款牌照及 20 多项其他州申请。[S1]
+- 2026-10-02｜RedotPay 明确近期计划通过收购扩大受监管业务版图，但未披露标的、地区、牌照类型或完成时间。[S2]
 
 #### Current Assessment
 - 事实：两项州级贷款牌照、持牌实体及其他州申请数量由 RedotPay 官方确认；牌照用途指向未来贷款产品。
 - 推测：RedotPay 正从支付与汇款牌照延伸到信贷能力，为美国市场的账户、支付和贷款组合建立监管基础。
-- 待验证假设：其他州申请的获批节奏、产品上线时间、用户资格、资金来源、定价与实际采用。
+- 待验证假设：其他州申请的获批节奏、潜在收购标的及牌照类型、产品上线时间、用户资格、资金来源、定价与实际采用。
 
 #### Why It Matters to Sykka
 核心竞品正在美国同时布局资金移动与贷款监管能力，竞争范围可能从稳定币支付入口扩展到受监管的支付与信贷组合。Sykka 需要关注其真实开放范围和产品交付，不能把牌照获批等同于业务已经上线。
@@ -295,9 +296,11 @@ RedotPay 9 月 23 日宣布，其美国实体 Red Dot Lending (US), LLC 已获�
 #### Open Questions
 - [ ] 20 多项州级申请分别覆盖哪些州和牌照类型？｜验证方式：NMLS、州监管机构与 RedotPay 后续公告｜出现审批结果时复查。
 - [ ] Idaho、Nebraska 的贷款产品何时上线，面向哪些用户及资金场景？｜验证方式：产品条款、Help Center 与 App 实测｜产品发布时复查。
+- [ ] 通过收购扩张监管版图的对象、地区、牌照类型和交易进度是什么？｜验证方式：RedotPay 公告、监管文件与交易披露｜出现具体交易时复查。
 
 #### Sources
 - S1｜[We’ve Expanded Our US Licensing Footprint, Obtaining Two State Lending Licenses](https://www.redotpay.com/news/weve-expanded-our-us-licensing-footprint-obtaining-two-state-lending-licenses)｜RedotPay 官方｜发布日期：2026-09-23｜查阅日期：2026-09-28｜支持：持牌实体、Idaho 与 Nebraska 两项牌照、20 多项其他州申请及未来用途｜限制：公司声明；未披露其他州清单、产品时间表或经营结果。
+- S2｜[Building a Better, More Inclusive Financial System](https://www.redotpay.com/news/building-a-better-more-inclusive-financial-system)｜RedotPay 官方｜发布日期：2026-10-02｜查阅日期：2026-10-08｜支持：近期计划通过收购扩大受监管业务版图｜限制：未披露标的、地区、牌照类型、金额或完成时间；其余牌照内容为既有事实。
 
 ### IND-002｜Visa 与 Credit Coop 将链上信贷用于稳定币卡日常结算融资
 
@@ -576,6 +579,239 @@ Reap 与 Visa 9 月 23 日联合宣布战略合作，计划通过 Reap 的发卡
 #### Sources
 - S1｜[Reap and Visa Collaborate to Launch Stablecoin Card Programs Across 100+ Markets](https://www.visa.com.sg/about-visa/newsroom/press-releases/reap-and-visa-collaborate-to-launch-stablecoin-card-programs-across-100-markets.html)｜Visa 官方 / 联合公告｜发布日期：2026-09-23｜查阅日期：2026-09-28｜支持：合作、100+ 市场目标、基础设施范围、区域扩展及亚太稳定币结算｜限制：100+ 为合作目标，未列出逐国上线状态、客户数量或交易数据。
 - S2｜[Reap and Visa Collaborate to Launch Stablecoin Card Programs Across 100+ Markets](https://reap.global/newsroom/reap-visa-launch-100-markets-stablecoin-card-program)｜Reap 官方 / 联合公告｜发布日期：2026-09-23｜查阅日期：2026-09-28｜支持：合作范围、产品能力与结算关系｜限制：与 Visa 公告为同一联合披露，不构成独立验证；部分增长数据引用第三方或公司自报。
+
+### IND-011｜MoonPay Korea 联合三家韩国金融机构建设稳定币跨境分发基础设施
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-09-29
+- Last Updated: 2026-09-29
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+MoonPay 9 月 29 日正式发布 MoonPay Korea，并宣布与 KakaoBank、Woori Bank、KB Financial Group 合作，覆盖韩国至美国汇款 PoC、韩元稳定币全球分发、法币与数字资产转换、钱包及卡支付等方向。[S1]
+
+#### Timeline
+- 2026-09-29｜MoonPay Korea 发布三项银行合作及各自范围。[S1]
+
+#### Current Assessment
+- 事实：合作方、PoC 与基础设施方向由 MoonPay 官方披露。
+- 推测：MoonPay 选择银行合作加中立基础设施路径，强化本地法币、稳定币与跨境末端分发的连接。
+- 待验证假设：VASP 注册、PoC 结果、实际开放范围、交易量与结算时效。
+
+#### Why It Matters to Sykka
+事件展示了进入受监管市场时，以本地银行合作连接发行、钱包、换汇、汇款和卡的完整分发路径；规划不能视为已上线能力。
+
+#### Open Questions
+- [ ] 三项合作何时进入生产，哪些能力已面向客户？｜验证方式：银行公告、监管登记、产品实测与交易披露｜出现上线公告时复查。
+
+#### Sources
+- S1｜[MoonPay Launches MoonPay Korea](https://www.moonpay.com/newsroom/moonpay-korea-bank-partnerships)｜MoonPay 官方｜发布日期：2026-09-29｜查阅日期：2026-10-08｜支持：三家合作方及合作范围｜限制：多数为规划或 PoC，未披露采用规模。
+
+### IND-012｜Open USD 上线并开放四条企业级接入路径
+
+- Priority: P0
+- Status: Confirmed
+- First Seen: 2026-09-30
+- Last Updated: 2026-09-30
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Open Standard 9 月 30 日宣布 OUSD 正式上线，由 Bridge 发行，原生支持 Base、Ethereum、Solana 与 Tempo；企业可通过 Mastercard/BVNK、Stripe、Visa 及 10 月 1 日开放的 Coinbase 接入，四条路径均支持 1:1 美元免费 mint/burn。[S1]
+
+#### Timeline
+- 2026-09-30｜OUSD 上线并公布链、发行方、接入路径与 200+ 合作伙伴口径。[S1]
+
+#### Current Assessment
+- 事实：OUSD 及四条接入路径已由官方确认；200+ 指合作伙伴，不等于活跃采用者。
+- 推测：稳定币竞争进一步转向由发行、支付网络、商户和交易入口共同组成的分发网络。
+- 待验证假设：真实流通量、支付量、活跃企业数及各入口贡献。
+
+#### Why It Matters to Sykka
+Sykka 需区分稳定币资产选择与入口、场景、合作网络的分发控制力，并验证实际使用而非伙伴名单。
+
+#### Open Questions
+- [ ] 四条路径的活跃客户、交易量和场景构成如何？｜验证方式：储备证明、链上数据及合作方披露｜月结复查。
+
+#### Sources
+- S1｜[OUSD is live](https://joinopenstandard.com/blog/ousd-is-live/)｜Open Standard 官方｜发布日期：2026-09-30｜查阅日期：2026-10-08｜支持：上线、发行、链、接入路径及伙伴口径｜限制：未披露采用和交易数据。
+
+### IND-013｜Lloyds 与 Visa 完成 75 万美元 USDC 跨境结算试点
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-09-30
+- Last Updated: 2026-09-30
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Lloyds 与 Visa 完成为期 7 天的真实结算试点：Lloyds 使用 USDC 向美国 Visa 结算累计 75 万美元支付义务，包含周末交易，资金在一小时内到达；试点覆盖公有链和私有链环境。[S1]
+
+#### Timeline
+- 2026-09-30｜双方公布已完成的真实结算试点及金额、周期和速度。[S1]
+
+#### Current Assessment
+- 事实：试点已完成，但规模仅 75 万美元、周期 7 天。
+- 推测：传统银行到卡网络的机构结算正从概念验证进入真实交易测试。
+- 待验证假设：持续使用安排、生产规模、成本与流动性改善。
+
+#### Why It Matters to Sykka
+事件补充了消费者支付之外的后台结算路径；试点结果不能外推为规模化采用。
+
+#### Open Questions
+- [ ] 双方是否进入持续生产结算，实际量级和经济性如何？｜验证方式：后续公告、财报与结算披露｜出现生产公告时复查。
+
+#### Sources
+- S1｜[Lloyds and Visa test faster, round-the-clock cross-border settlement using stablecoins](https://www.lloydsbankinggroup.com/media/press-releases/2026/lloyds-banking-group/lloyds-and-visa-test-round-the-clock-cross-border-settlement-using-stablecoins.html)｜Lloyds Banking Group 官方｜发布日期：2026-09-30｜查阅日期：2026-10-08｜支持：试点金额、周期、USDC、到账速度与环境｜限制：短期小规模试点，未披露生产计划和成本。
+
+### IND-014｜Fiserv 数字资产平台进入生产并接入北达科他州银行网络
+
+- Priority: P0
+- Status: Confirmed
+- First Seen: 2026-10-01
+- Last Updated: 2026-10-01
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Fiserv 10 月 1 日宣布数字资产平台已服务金融机构客户。首个生产案例 Roughrider Coin 通过现有 Commercial Center 接入北达科他州 90 多家参与银行和信用合作社，用于银行间资金移动；平台组合发行、储备、托管与结算能力。[S1]
+
+#### Timeline
+- 2026-10-01｜Fiserv 公布平台生产上线及首个生产案例。[S1]
+
+#### Current Assessment
+- 事实：平台与首个案例已进入生产；90+ 为参与范围，非活跃机构数。
+- 推测：传统核心支付服务商正把稳定币能力嵌入银行现有系统入口。
+- 待验证假设：活跃机构、交易量、成本改善及其他客户上线规模。
+
+#### Why It Matters to Sykka
+稳定币分发正被封装进银行既有系统，Sykka 需关注基础设施伙伴能否降低机构接入与运营成本。
+
+#### Open Questions
+- [ ] 90+ 机构中实际启用多少，交易量和效率改善如何？｜验证方式：Fiserv、Bank of North Dakota 与参与机构披露｜月结复查。
+
+#### Sources
+- S1｜[Fiserv Digital Asset Platform Goes Live with Financial Institution Clients](https://investors.fiserv.com/news-releases/news-release-details/fiserv-digital-asset-platform-goes-live-financial-institution)｜Fiserv 官方｜发布日期：2026-10-01｜查阅日期：2026-10-08｜支持：生产上线、首个案例、机构范围和平台能力｜限制：未披露实际活跃机构或交易数据。
+
+### IND-015｜Rain 申请成立美国 National Trust Bank
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-10-05
+- Last Updated: 2026-10-05
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Rain 10 月 5 日宣布已向 OCC 申请成立 Rain National Trust Bank。若获批，拟提供数字资产及美元托管、稳定币储备管理、机构稳定币发行与赎回；不会吸收存款、提供消费者账户或商业贷款。[S1][S2]
+
+#### Timeline
+- 2026-10-05｜Rain 公布已提交申请及拟议业务范围；OCC 公开列表查阅时尚未列出该申请。[S1][S2]
+
+#### Current Assessment
+- 事实：公司已公开声明提交申请；公开监管列表尚未同步，且申请不等于获批。
+- 推测：Rain 试图把合作项目依赖的托管、储备与发行能力收进受联邦监管的独立实体。
+- 待验证假设：OCC 受理、公开申请材料、资本要求、审批结果与最终范围。
+
+#### Why It Matters to Sykka
+上游卡与支付基础设施商开始向牌照和发行层延伸，可能改变合作依赖与控制力；当前仅可作为监管进程信号。
+
+#### Open Questions
+- [ ] OCC 何时公开受理，最终批准范围和条件是什么？｜验证方式：OCC 申请列表和决定文件｜列表更新或决定发布时复查。
+
+#### Sources
+- S1｜[Rain Files Application With the OCC to Establish Rain National Trust Bank](https://www.prnewswire.com/news-releases/rain-files-application-with-the-occ-to-establish-rain-national-trust-bank-302898950.html)｜Rain 公司新闻稿｜发布日期：2026-10-05｜查阅日期：2026-10-08｜支持：申请、拟议范围与限制｜限制：公司自报，尚未获批。
+- S2｜[Digital Assets Licensing Applications](https://www.occ.treas.gov/topics/charters-and-licensing/digital-assets-licensing-applications/index-digital-assets-licensing-applications.html)｜OCC 官方｜查阅日期：2026-10-08｜支持：公开申请列表当前未列 Rain｜限制：页面可能存在更新滞后，不能据此否认已提交。
+
+### IND-016｜OKX Money 上线独立稳定币日常资金应用
+
+- Priority: P0
+- Status: Confirmed
+- First Seen: 2026-10-06
+- Last Updated: 2026-10-06
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+OKX 10 月 6 日正式发布独立 App OKX Money，在部分市场组合 USDG、USDC、USDT 持有、余额奖励、转账及虚拟/实体卡消费，并支持 50 多种本地货币入金；具体能力依地区与资格而异。[S1]
+
+#### Timeline
+- 2026-10-06｜OKX 宣布 OKX Money 在部分市场上线。[S1]
+
+#### Current Assessment
+- 事实：独立 App 和核心能力已由官方确认；未披露完整国家清单和采用数据。
+- 推测：拥有交易入口的平台仍以独立消费者产品承接日常资金使用，显示交易与日常资金入口可能分化。
+- 待验证假设：各市场开放范围、卡与入金可用性、活跃及消费规模、奖励成本。
+
+#### Why It Matters to Sykka
+该产品与 local fiat → stablecoin balance → transfer → rewards → card spending 链路高度重叠，是直接的消费者分发参照。
+
+#### Open Questions
+- [ ] 首发国家及各能力真实开放范围、使用规模与单位经济性如何？｜验证方式：资格页、App 实测、条款与经营披露｜月结复查。
+
+#### Sources
+- S1｜[Introducing OKX Money: Digital Dollars That Keep Up With Modern Life](https://www.okx.com/en-gb/learn/okx-money-launch-select-markets)｜OKX 官方｜发布日期：2026-10-06｜查阅日期：2026-10-08｜支持：独立 App、能力、50+ 货币及部分市场上线｜限制：地区资格不同，未披露完整国家清单或采用数据。
+
+### IND-017｜Independent Reserve 在新加坡上线企业稳定币与法币跨境支付
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-06
+- Last Updated: 2026-10-06
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Independent Reserve 10 月 6 日宣布在新加坡现有平台内上线企业跨境支付服务，支持 20 多种法币和稳定币，用于供应商付款、国际薪资、集团资金划转、稳定币收款及流动性管理。[S1]
+
+#### Timeline
+- 2026-10-06｜企业跨境支付服务正式发布并开放产品页。[S1]
+
+#### Current Assessment
+- 事实：产品能力、币种范围和企业场景由持牌服务商官方确认。
+- 推测：稳定币正被嵌入企业账户、法币付款和资金管理入口。
+- 待验证假设：客户数、交易量、稳定币占比、实际速度与成本改善。
+
+#### Why It Matters to Sykka
+该事件代表 Business Distribution 路径，可作为消费者产品之外的账户与跨境资金场景参照。
+
+#### Open Questions
+- [ ] 真实客户与交易量、走廊覆盖及费用结构如何？｜验证方式：产品条款、客户案例与经营披露｜出现量化信息时复查。
+
+#### Sources
+- S1｜[Independent Reserve Expands Service Offerings to Bring Real-Time, Cross-Border Payments To Businesses in Singapore](https://www.independentreserve.com/blog/news/press-release-independent-reserve-expands-service-offerings-to-bring-real-time-cross-border-payments-to-businesses-in-singapore)｜Independent Reserve 官方｜发布日期：2026-10-06｜查阅日期：2026-10-08｜支持：上线、20+ 币种、支付与收款场景｜限制：未披露客户、交易量和经济性。
+
+### IND-018｜Circle 与 Tereina 将 USDC、EURC 接入 SAP 企业工作流
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-10-07
+- Last Updated: 2026-10-07
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Circle 与 SAP 支持的 Tereina 10 月 7 日宣布合作，将 USDC、EURC 接入 Tereina 支付基础设施，首先面向 SAP Cloud ERP；企业可在既有业务应用中发起、接收和结算稳定币支付，未来数月开展客户验证。[S1]
+
+#### Timeline
+- 2026-10-07｜双方公布合作、首个 ERP 场景及后续客户验证安排。[S1]
+
+#### Current Assessment
+- 事实：合作和集成方向已官方确认，客户验证尚未完成。
+- 推测：稳定币分发正在从独立 App 延伸到企业已有财务与支付工作流。
+- 待验证假设：验证客户、生产上线、交易量、ERP 覆盖和经济性。
+
+#### Why It Matters to Sykka
+企业已有系统可能成为新的分发入口；SAP 生态规模不能直接视为稳定币采用规模。
+
+#### Open Questions
+- [ ] 客户验证结果、生产上线范围和真实交易规模如何？｜验证方式：Circle、Tereina 与 SAP 后续公告｜验证项目完成时复查。
+
+#### Sources
+- S1｜[Tereina and Circle Bring USDC and EURC into Enterprise Workflows](https://www.circle.com/es/pressroom/tereina-an-sap-backed-company-and-circle-bring-usdc-and-eurc-into-enterprise-workflows-starting-with-the-sap-ecosystem-behind-84-of-global-commerce)｜Circle 官方 / 联合公告｜发布日期：2026-10-07｜查阅日期：2026-10-08｜支持：合作、币种、SAP Cloud ERP 起点和验证计划｜限制：尚未披露生产客户或交易数据。
 
 ### Active Signal 复制模板
 
