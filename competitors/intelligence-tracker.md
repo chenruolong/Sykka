@@ -4,7 +4,7 @@ Competitive Intelligence：Daily Intelligence → Weekly Maintenance → Event T
 
 V2：Tracker 是证据 / 长期记忆层；[月报](monthly/README.md)是阶段性判断层。Tracker 只保留当前判断、观察重点和事件证据，不追加日报全文或周维护日志。已有首轮扫描记录作为初始化证据保留。
 
-- 创建：2026-09-07；最近维护：2026-10-08（补充维护 2026-09-29 至 2026-10-07 日报：新增 IND-011 至 IND-018，更新 RD-004；复核既有 Active Signals）。
+- 创建：2026-09-07；最近维护：2026-10-19（补充维护 2026-10-08 至 2026-10-18 日报：新增 RD-005、KA-003、IND-019 至 IND-030；复核既有 Active Signals）。
 - 时间口径：Asia/Shanghai；日期 YYYY-MM-DD，来源时间保留原时区。
 - 节奏：每日发现与去重，每周五沉淀过去 7 天日报及全部 Active Signals。
 - 入库：P0 和值得持续跟踪的 P1；P2 默认过滤。
@@ -812,6 +812,418 @@ Circle 与 SAP 支持的 Tereina 10 月 7 日宣布合作，将 USDC、EURC 接�
 
 #### Sources
 - S1｜[Tereina and Circle Bring USDC and EURC into Enterprise Workflows](https://www.circle.com/es/pressroom/tereina-an-sap-backed-company-and-circle-bring-usdc-and-eurc-into-enterprise-workflows-starting-with-the-sap-ecosystem-behind-84-of-global-commerce)｜Circle 官方 / 联合公告｜发布日期：2026-10-07｜查阅日期：2026-10-08｜支持：合作、币种、SAP Cloud ERP 起点和验证计划｜限制：尚未披露生产客户或交易数据。
+
+### RD-005｜RedotPay 接入 Nium 全球出金网络
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-08
+- Last Updated: 2026-10-08
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW（2026-10-16 写入失败后的重新核验补录）
+
+#### What Happened
+RedotPay 与 Nium 10 月 8 日宣布合作，RedotPay 将接入 Nium 覆盖 190 个国家、100 种货币的支付网络，用于把稳定币出金服务扩展至更多市场；公告同时称 RedotPay 用户超过 900 万，Nium 过去一年网络处理资金流动超过 840 亿美元。[S1]
+
+#### Timeline
+- 2026-10-08｜双方公布全球出金基础设施合作及网络范围。[S1]
+
+#### Current Assessment
+- 事实：合作、网络标称范围及双方自报规模已有联合官方公告确认；Confirmed 仅适用于公告所述合作。
+- 推测：RedotPay 正通过外部持牌网络扩大 stablecoin → local fiat 的出金覆盖。
+- 待验证假设：已实际开放的国家、币种、到账方式、费率、成功率和交易规模；Nium 全网覆盖不等于 RedotPay 当前全部可用范围。
+
+#### Why It Matters to Sykka
+这是核心竞品在全球出金侧的直接能力扩张。对比时应核验真实开放走廊和单位成本，而不是只比较合作方网络总覆盖。
+
+#### Open Questions
+- [ ] RedotPay App 当前开放哪些新增走廊、费率与到账时效？｜验证方式：产品资格页、App 实测和帮助中心｜出现正式清单或实测时复查。
+- [ ] 900 万用户与 840 亿美元网络规模的统计口径是什么？｜验证方式：双方经营披露｜月结复查。
+
+#### Sources
+- S1｜[Nium Brings Global Off-Ramping Infrastructure to RedotPay](https://www.redotpay.com/news/nium-brings-global-off-ramping-infrastructure-to-redotpay)｜RedotPay / Nium 联合官方公告｜发布日期：2026-10-08｜查阅日期：2026-10-19｜支持：合作、网络范围及公司自报规模｜限制：未披露 RedotPay 已开放走廊、使用量、费率或上线进度。
+
+### KA-003｜KAST 披露约 140 万用户及最新经营规模
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-13
+- Last Updated: 2026-10-13
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW（新增用户规模披露；约 50 亿美元年化交易规模此前已有同口径披露）
+
+#### What Happened
+KAST 10 月 13 日在任命 Claire Wells 为首席法务官的公告中称，公司约有 140 万用户、约 250 名全职员工，并处理约 50 亿美元年化交易规模。3 月融资公告已披露超过 100 万用户和接近 50 亿美元年化交易规模，因此本次实质增量主要是用户规模更新及合规管理层扩充，不把 50 亿美元写成首次达到的新里程碑。[S1][S2]
+
+#### Timeline
+- 2026-03-09｜融资公告披露超过 100 万用户、接近 50 亿美元年化交易规模，作为历史口径基线。[S2]
+- 2026-10-13｜公司披露约 140 万用户、约 50 亿美元年化交易规模和约 250 名全职员工，并任命首席法务官负责全球法务、合规和牌照工作。[S1]
+
+#### Current Assessment
+- 事实：公司自报用户数从 3 月的超过 100 万更新至约 140 万；年化交易规模仍约 50 亿美元。
+- 推测：用户规模增长但年化交易规模披露大致持平，可能反映口径取整、用户结构变化或交易增长放缓，现有信息不足以区分。
+- 待验证假设：用户是注册、验证还是活跃用户；交易规模包含哪些资金流及卡消费占比；年化值的计算月份和去重方式。
+
+#### Why It Matters to Sykka
+该披露提供核心竞品的规模参照，但不能把注册用户当活跃用户，也不能把总交易流量当卡消费 GMV。后续应优先对齐活跃、入金、消费和收入等可比口径。
+
+#### Open Questions
+- [ ] 140 万用户的活跃与验证口径、地区分布如何？｜验证方式：经营披露、媒体访谈及产品数据｜下次量化披露时复查。
+- [ ] 50 亿美元年化交易规模包含哪些交易，卡消费占比多少？｜验证方式：官方方法说明或拆分数据｜月结复查。
+
+#### Sources
+- S1｜[KAST Selects Kiln's Claire Wells as Chief Legal Officer](https://www.kast.xyz/en/blog/people/kast-appoints-claire-wells-as-chief-legal-officer)｜KAST 官方｜发布日期：2026-10-13｜查阅日期：2026-10-19｜支持：任命、约 140 万用户、约 50 亿美元年化交易规模、约 250 名员工｜限制：公司自报，未给出用户活跃度或交易口径。
+- S2｜[KAST Raises $80 Million as Stablecoins Move From Infrastructure Into Mainstream Financial Services](https://www.prnewswire.com/news-releases/kast-raises-80-million-as-stablecoins-move-from-infrastructure-into-mainstream-financial-services-302708234.html)｜KAST 公司新闻稿｜发布日期：2026-03-09｜查阅日期：2026-10-19｜支持：此前已披露超过 100 万用户及接近 50 亿美元年化交易规模｜限制：同为公司自报。
+
+### IND-019｜Samsung Wallet 计划在美国原生接入 USDC 跨境转账
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-10-07
+- Last Updated: 2026-10-07
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW（2026-10-16 写入失败后的重新核验补录）
+
+#### What Happened
+Samsung Electronics America 10 月 7 日宣布，计划在 10 月最后一周向符合条件的美国 Galaxy 用户开放 Samsung Wallet 稳定币功能，首期支持 USDC，可向兼容钱包转账，并可向 60 多个国家的合格银行账户汇款、由收款人接收当地货币。Bastion 提供受监管的钱包与资金移动服务，Coinbase Prime 提供子托管；Samsung 自身不是银行、汇款机构或数字资产托管人。[S1]
+
+#### Timeline
+- 2026-10-07｜Samsung 公布功能、美国首发资格、合作方分工及计划上线窗口。[S1]
+
+#### Current Assessment
+- 事实：产品计划、首发地区、USDC 及合作方分工已由 Samsung 官方确认。
+- 推测：手机系统钱包正在成为稳定币跨境分发入口，可能降低用户安装独立加密应用的门槛。
+- 待验证假设：功能是否按期上线、真实可用设备和走廊、费用、网络支持、激活和留存；8200 万兼容设备不等于用户采用规模。
+
+#### Why It Matters to Sykka
+系统级钱包可能直接占据跨境转账入口。Sykka 需要比较自身在地区、走廊、费率和使用体验上的差异，而不是只比较理论触达设备数。
+
+#### Open Questions
+- [ ] 10 月最后一周是否按期上线，首批网络、费用和国家清单是什么？｜验证方式：Samsung Wallet 产品页与 App 实测｜上线后复查。
+
+#### Sources
+- S1｜[Samsung Wallet to Bring Stablecoin Access to Eligible Galaxy Users in the US](https://news.samsung.com/us/samsung-wallet-bring-stablecoin-access-eligible-galaxy-users-us/)｜Samsung Electronics America 官方｜发布日期：2026-10-07｜查阅日期：2026-10-19｜支持：计划上线时间、美国资格、USDC、钱包与银行转账范围及合作方｜限制：尚未正式上线，覆盖与费用受资格和地区限制。
+
+### IND-026｜Rain 上线嵌入式稳定币钱包并连接卡、账户与出金
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-13
+- Last Updated: 2026-10-13
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW（与 IND-015 的美国信托银行申请为不同事件）
+
+#### What Happened
+Rain 10 月 13 日上线供合作伙伴嵌入 App 的非托管钱包，支持 12 条链，并可通过同一集成连接虚拟账户、Rain 卡、on/off-ramp 和 payout。非托管钱包已开放；托管钱包及余额收益能力计划于年底前推出。[S1]
+
+#### Timeline
+- 2026-10-13｜非托管 Rain Wallets 向合作伙伴开放；托管钱包与余额收益仍属后续计划。[S1]
+
+#### Current Assessment
+- 事实：非托管钱包与既有卡、虚拟账户和出金栈的连接已由 Rain 官方确认。
+- 推测：Rain 正从发卡基础设施扩展为以账户余额为中心的完整资金分发平台。
+- 待验证假设：合作伙伴实际接入、终端用户采用、地区限制、成本和托管/收益功能是否按期上线。
+
+#### Why It Matters to Sykka
+下游产品可用单一供应商串联入金、持有、消费和出金，可能缩短上线周期，也会提高供应商集中度。Sykka 应关注可替换性和真实集成成本。
+
+#### Open Questions
+- [ ] 哪些合作伙伴已进入生产、各模块覆盖哪些地区？｜验证方式：客户案例、产品条款与实测｜出现生产客户时复查。
+
+#### Sources
+- S1｜[Rain Introduces Wallets, Putting the Account at the Center of Its Stablecoin Payments Platform](https://www.prnewswire.com/news-releases/rain-introduces-wallets-putting-the-account-at-the-center-of-its-stablecoin-payments-platform-302906704.html)｜Rain 公司新闻稿｜发布日期：2026-10-13｜查阅日期：2026-10-19｜支持：产品上线、12 条链及与卡、账户、出金的连接｜限制：未披露采用量、费用或完整地区资格。
+
+### IND-027｜Bakkt 与 Thredd 开发稳定币结算的信用卡基础设施
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-10-13
+- Last Updated: 2026-10-13
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Bakkt 与 Thredd 10 月 13 日宣布在美国开发 Credit Card-as-a-Service 项目，计划由合作银行发行信用卡，并用 Bakkt 的稳定币结算基础设施连接 Thredd 的发卡处理、信用、钱包、风控及奖励能力。首个概念验证目标为 2027 年上半年，仍受产品、客户、银行、卡组织和监管条件影响。[S1]
+
+#### Timeline
+- 2026-10-13｜双方公布合作及 2027 年上半年概念验证目标。[S1]
+
+#### Current Assessment
+- 事实：合作和产品设计方向已确认；当前尚未正式上线。
+- 推测：稳定币结算正从预付/借记卡延伸至信用产品，但能否改善融资和结算经济性尚无证据。
+- 待验证假设：发卡银行、首批客户、信用与结算结构、审批结果、上线时间及规模。
+
+#### Why It Matters to Sykka
+该事件把稳定币基础设施延伸到信用消费链路，是中长期产品参照，不应按当前可用能力处理。
+
+#### Open Questions
+- [ ] 概念验证是否启动并形成生产客户？｜验证方式：Bakkt、Thredd、发卡银行和卡组织公告｜2027 年上半年或出现客户时复查。
+
+#### Sources
+- S1｜[Bakkt Selects Thredd to Power Credit Card-as-a-Service Program Settling in Stablecoins](https://www.thredd.ai/company/press-releases/bakkt-selects-thredd-to-power-credit-card-as-a-service-program-settling-in-stablecoins)｜Thredd / Bakkt 联合公告｜发布日期：2026-10-13｜查阅日期：2026-10-19｜支持：合作、角色分工和概念验证目标｜限制：尚无上线客户、发卡银行或交易数据。
+
+### IND-020｜Payward 签约收购 Saldo Bank 以补充欧盟银行基础设施
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-10-14
+- Last Updated: 2026-10-14
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW（2026-10-16 写入失败后的重新核验补录）
+
+#### What Happened
+Payward 10 月 14 日宣布签署最终协议，拟收购 Saldo Finance Oy 及其持立陶宛银行牌照的子公司 Saldo Bank。交易预计 2027 年完成并受监管审批约束；完成后预计支持存款、贷款、信用卡、SEPA、发卡和 Banking-as-a-Service 等能力。[S1]
+
+#### Timeline
+- 2026-10-14｜签署最终收购协议；整合与监管审批开始，预计 2027 年完成。[S1]
+
+#### Current Assessment
+- 事实：签约和标的现有牌照/业务由 Payward 官方确认；交易尚未完成。
+- 推测：Payward 正把稳定币、账户、卡、支付和贷款基础设施整合到更完整的欧洲持牌栈。
+- 待验证假设：审批结果、整合时间、Kraken/Payward 用户的真实开放范围和协同效果。
+
+#### Why It Matters to Sykka
+竞争可能从单一产品体验转向牌照和底层资金能力的纵向整合。当前不能把标的能力视为 Payward 已向用户开放。
+
+#### Open Questions
+- [ ] 交易何时获批并完成，哪些能力首先向哪些客户开放？｜验证方式：监管文件、交割公告与产品条款｜出现审批或交割进展时复查。
+
+#### Sources
+- S1｜[Payward to Acquire Saldo Bank: Building the EU Layer of Payward Banking](https://www.payward.com/press-release/payward-acquires-saldo-bank)｜Payward 官方｜发布日期：2026-10-14｜查阅日期：2026-10-19｜支持：协议、标的能力、预计交割时间｜限制：尚待审批和交割，未来能力不等于当前可用。
+
+### IND-021｜EBA 将 USDC 列为欧盟首个重大电子货币代币
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-14
+- Last Updated: 2026-10-14
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW（2026-10-16 写入失败后的重新核验补录）
+
+#### What Happened
+EBA 10 月 14 日将 Circle Internet Financial Europe SAS 发行的 USDC 分类为欧盟首个 significant e-money token。自 11 月 12 日起，EBA 将负责自有资金、储备、流动性、恢复和赎回计划等直接监督，法国 ACPR 继续负责治理、外包等事项。[S1]
+
+#### Timeline
+- 2026-10-14｜EBA 公布分类及双重监管分工，生效日为 2026-11-12。[S1]
+
+#### Current Assessment
+- 事实：分类、法律依据和监管分工由 EBA 官方确认。
+- 推测：大规模稳定币将面临更高强度的审慎监管和跨境监管协作。
+- 待验证假设：对发行运营、储备安排和合作方要求的实际影响；该分类不是使用禁令，也未证明 Sykka 可用性改变。
+
+#### Why It Matters to Sykka
+使用 USDC 的产品需要持续跟踪发行主体监管状态和地区差异，但不能把发行人监管升级直接写成产品侧限制。
+
+#### Open Questions
+- [ ] 11 月 12 日后监管安排是否带来公开的储备、流动性或合作方要求变化？｜验证方式：EBA、ACPR 和 Circle 文件｜生效后复查。
+
+#### Sources
+- S1｜[The EBA Classifies USDC as the First Significant E-Money Token in the European Union](https://www.eba.europa.eu/publications-and-media/press-releases/eba-classifies-usdc-first-significant-e-money-token-european-union)｜European Banking Authority 监管公告｜发布日期：2026-10-14｜查阅日期：2026-10-19｜支持：分类、监管分工和生效日｜限制：不代表限制 USDC 使用或具体产品变化。
+
+### IND-022｜Qivalis 获得荷兰电子货币机构牌照
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-14
+- Last Updated: 2026-10-14
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW（2026-10-16 写入失败后的重新核验补录）
+
+#### What Happened
+Qivalis 10 月 14 日宣布获得荷兰央行电子货币机构许可，具备发行欧元 EMT 的关键监管条件。其计划在未来数月按 MiCA 要求及 White Paper 发布后发行欧元稳定币，并通过银行、交易平台、支付服务商和市场基础设施参与者等合格对手方分发。[S1]
+
+#### Timeline
+- 2026-10-14｜DNB 授予 EMI 许可；代币发行仍属未来计划。[S1]
+
+#### Current Assessment
+- 事实：EMI 许可和发行资格条件已由 Qivalis 官方确认。
+- 推测：欧洲银行联盟正构建以欧元稳定币为核心的 B2B2X 分发基础设施。
+- 待验证假设：White Paper、发行时间、链、首批分发伙伴、真实交易量；37 家支持银行不等于全部已成为生产分发渠道。
+
+#### Why It Matters to Sykka
+欧洲稳定币支付可能逐步形成银行主导的欧元资金层，影响多币种账户和跨境结算参照。
+
+#### Open Questions
+- [ ] 何时发布 White Paper 并正式发行，首批链和分发渠道是什么？｜验证方式：Qivalis、DNB 与参与银行公告｜发行时复查。
+
+#### Sources
+- S1｜[Qivalis Receives Authorisation as an Electronic Money Institution From De Nederlandsche Bank](https://qivalis.eu/press/news/qivalis-receives-authorisation-as-an-electronic-money-institution-from-de-nederlandsche-bank)｜Qivalis 官方｜发布日期：2026-10-14｜查阅日期：2026-10-19｜支持：牌照、发行计划和 B2B2X 分发模式｜限制：代币尚未发行，未披露生产渠道或采用量。
+
+### IND-023｜Mastercard 与 BVNK 上线 Global Money Platform
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-15
+- Last Updated: 2026-10-15
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW（2026-10-16 写入失败后的重新核验补录）
+
+#### What Happened
+Mastercard 与 BVNK 10 月 15 日上线 Mastercard Global Money Platform，通过单一 API 提供法币和稳定币多币种账户、实时兑换、稳定币关联卡、Mastercard Move 本地银行出金及 Treasury 能力。平台已可通过 BVNK 获取；Nuvei、Marqeta、Ontop、Beem 和 Almond FinTech 列为首批集成方。40 多种货币、200 多个国家和地区的出金覆盖是 2027 年目标，不是当前覆盖。[S1]
+
+#### Timeline
+- 2026-10-15｜平台正式发布并可通过 BVNK 获取，公布首批集成方和后续覆盖目标。[S1]
+
+#### Current Assessment
+- 事实：平台、模块和当前可获取状态由 Mastercard 官方确认。
+- 推测：大型卡组织正把账户、稳定币、兑换、消费和出金整合为统一分发层。
+- 待验证假设：各模块当前国家覆盖、客户生产状态、交易规模、费用和经济性。
+
+#### Why It Matters to Sykka
+这与 Sykka 的资金分发链路高度重叠。竞争比较需要下钻真实开放范围和接入成本，不能把 2027 年目标当当前能力。
+
+#### Open Questions
+- [ ] 首批客户哪些已进入生产，各模块真实覆盖与定价如何？｜验证方式：产品文档、客户公告与实测｜出现客户上线时复查。
+
+#### Sources
+- S1｜[Mastercard and BVNK Launch Global Money Platform to Power a Multi-Money World](https://www.mastercard.com/global/en/news-and-trends/press/2026/october/mastercard-and-bvnk-launch-global-money-platform-to-power-a-mult.html)｜Mastercard 官方｜发布日期：2026-10-15｜查阅日期：2026-10-19｜支持：上线、模块、首批集成方和目标范围｜限制：未披露完整当前覆盖、交易量或价格。
+
+### IND-024｜Stripe 与 Plasma 合作开发多币种稳定币卡
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-10-15
+- Last Updated: 2026-10-15
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW（2026-10-16 写入失败后的重新核验补录）
+
+#### What Happened
+Stripe 与 Plasma 10 月 15 日宣布合作开发多币种稳定币卡体验，Plasma 担任设计合作伙伴。计划支持用户持有并使用 USD、EUR、BRL、MXN、COP 等余额，降低不必要的兑换；公告引用 Stripe 现有稳定币卡覆盖 30 多个国家，但不代表新多币种体验已在这些市场上线。[S1]
+
+#### Timeline
+- 2026-10-15｜双方公布合作和多币种卡设计方向。[S1]
+
+#### Current Assessment
+- 事实：合作与产品方向已确认，完整功能和市场尚未正式上线。
+- 推测：本币余额与自动选币可能成为稳定币卡降低 FX 摩擦的差异化方向。
+- 待验证假设：首发国家、支持资产、自动选币逻辑、实际 FX 节省、上线时间和采用量。
+
+#### Why It Matters to Sykka
+多币种余额可能直接影响跨境消费成本和用户体验，值得纳入资金路由和定价对比，而不是只比较卡覆盖。
+
+#### Open Questions
+- [ ] 产品何时上线，哪些国家与资产首发，FX 费用如何？｜验证方式：Stripe/Plasma 产品条款和实测｜正式上线时复查。
+
+#### Sources
+- S1｜[Stripe and Plasma Co-Develop a New Multi-Currency Card Experience](https://www.globenewswire.com/news-release/2026/10/15/3381757/0/en/stripe-and-plasma-co-develop-a-new-multi-currency-card-experience.html)｜Plasma 公司新闻稿｜发布日期：2026-10-15｜查阅日期：2026-10-19｜支持：合作、设计目标、币种与现有覆盖背景｜限制：规划能力尚未证明上线或成本改善。
+
+### IND-025｜Fireblocks 上线稳定币 OTC 多交易商流动性市场
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-15
+- Last Updated: 2026-10-15
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW（2026-10-16 写入失败后的重新核验补录）
+
+#### What Happened
+Fireblocks 10 月 15 日上线 Liquidity Market，使支付公司可从多家 OTC 交易商同时请求报价、比较并执行稳定币兑换，并统一查看授信、保证金和余额。B2C2 与 Zodia Markets 为首批上线流动性提供商；MoneyGram、OpenPayd、Reap、TapTapSend 和 Zepz 为设计合作伙伴。[S1][S2]
+
+#### Timeline
+- 2026-10-15｜产品发布；B2C2、Zodia Markets 作为首批提供商上线。[S1][S2]
+
+#### Current Assessment
+- 事实：产品、首批流动性提供商和设计合作伙伴已由 Fireblocks 官方材料确认。
+- 推测：稳定币支付基础设施的竞争开始下沉到流动性采购、价差和资金管理效率。
+- 待验证假设：实际成交量、报价深度、平均价差改善、市场和资产覆盖。
+
+#### Why It Matters to Sykka
+资金分发成本不仅是链上费用，还包括 FX 和 OTC 流动性。Sykka 后续应把价差、深度和资金占用纳入供应商评估。
+
+#### Open Questions
+- [ ] 实际成交量、报价改善及资产/地区覆盖如何？｜验证方式：产品数据、客户案例与交易商披露｜出现量化案例时复查。
+
+#### Sources
+- S1｜[Fireblocks Launches Liquidity Market, Bringing Streaming OTC Pricing Into Stablecoin Payments](https://www.prnewswire.com/news-releases/fireblocks-launches-liquidity-market-bringing-streaming-otc-pricing-into-stablecoin-payments-302909484.html)｜Fireblocks 公司新闻稿｜发布日期：2026-10-15｜查阅日期：2026-10-19｜支持：上线、合作方和核心工作流｜限制：未披露成交量或价差改善。
+- S2｜[Why Liquidity Is the Real Bottleneck in Stablecoin Payments](https://www.fireblocks.com/blog/stablecoin-payments-liquidity-bottleneck)｜Fireblocks 官方产品说明｜发布日期：2026-10-15｜查阅日期：2026-10-19｜支持：多交易商报价、授信/余额管理及执行流程｜限制：属于供应商自述。
+
+### IND-029｜Coinbase 与 Marqeta 扩展企业稳定币卡基础设施合作
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-10-16
+- Last Updated: 2026-10-16
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Coinbase 与 Marqeta 10 月 16 日宣布扩大合作，为 Marqeta 企业客户提供稳定币余额支持的卡能力。Coinbase 提供托管、法币兑换和 Base 上的结算，Marqeta 提供发卡与支付处理；公告尚未给出上线时间、首批企业、稳定币、费率或地区。[S1]
+
+#### Timeline
+- 2026-10-16｜双方公布面向更多企业客户的稳定币卡基础设施合作。[S1]
+
+#### Current Assessment
+- 事实：合作及双方分工由 Marqeta 官方确认；尚未披露生产上线范围。
+- 推测：稳定币余额、托管、兑换、链上结算和发卡正被产品化为企业可接入的组合基础设施。
+- 待验证假设：首批客户、支持资产、开放地区、费率、结算表现和采用量。
+
+#### Why It Matters to Sykka
+企业更容易外包完整稳定币卡链路，可能加快同类产品进入市场。Sykka 应比较差异化能力和供应商依赖，而不是只比较发卡速度。
+
+#### Open Questions
+- [ ] 首批客户及正式上线时间是什么？｜验证方式：Marqeta、Coinbase 与客户公告｜出现生产部署时复查。
+
+#### Sources
+- S1｜[Marqeta and Coinbase Collaborate to Enable Stablecoin-Backed Card Payments](https://investors.marqeta.com/news-releases/news-release-details/marqeta-and-coinbase-collaborate-enable-stablecoin-backed-card)｜Marqeta 官方｜发布日期：2026-10-16｜查阅日期：2026-10-19｜支持：合作、企业目标客户和技术分工｜限制：未披露上线日期、客户、资产、费率和地区。
+
+### IND-030｜Circle 宣布向约 40 个新兴和发展中市场扩张计划
+
+- Priority: P1
+- Status: Watching
+- First Seen: 2026-10-16
+- Last Updated: 2026-10-16
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Circle CEO Jeremy Allaire 10 月 16 日向 Reuters 表示，公司正推动进入约 40 个新兴和发展中市场，重点区域包括东南亚、拉丁美洲、非洲和中东。当前未公布完整国家清单、时间表或具体产品开放范围。[S1]
+
+#### Timeline
+- 2026-10-16｜CEO 公开披露约 40 个市场的扩张方向。[S1]
+
+#### Current Assessment
+- 事实：战略扩张方向来自 CEO 直接采访；尚不是市场上线公告。
+- 推测：Circle 可能通过当地支付机构、银行和收购资产扩大 USDC 的法币入口、出金及结算覆盖。
+- 待验证假设：具体国家、牌照、合作方、时间表、产品和新增交易规模。
+
+#### Why It Matters to Sykka
+目标区域与 Sykka 关注的分发市场重叠；只有具体走廊和能力落地后，才能评估对产品覆盖和成本的影响。
+
+#### Open Questions
+- [ ] 哪些国家先落地，采用何种牌照、合作方与产品路径？｜验证方式：Circle 官方公告、监管文件和产品资格页｜首次具体市场上线时复查。
+
+#### Sources
+- S1｜[Stablecoin Issuer Circle to Push Into 40 New Markets, CEO Says](https://www.reuters.com/technology/stablecoin-issuer-circle-push-into-40-new-markets-ceo-says-2026-10-16/)｜Reuters 对 Circle CEO 的直接采访｜发布日期：2026-10-16｜查阅日期：2026-10-19｜支持：约 40 个市场及重点区域｜限制：属于战略计划，未给出国家清单或上线时间。
+
+### IND-028｜Visa Direct 将稳定币预充值从试点推进至商业生产
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-15
+- Last Updated: 2026-10-15
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW（既有 2025 试点的生产化进展；此前未在 Tracker 建立独立事件）
+
+#### What Happened
+Visa 10 月 15 日宣布 Visa Direct 稳定币能力从试点进入商业部署，Inyo Global 成为首个把稳定币预充值带入生产的 enabler。合格客户可通过 Inyo 用 USDC 近实时预充值跨境 payout，而不只依赖传统资金窗口；可用性受客户资格和地区限制。[S1]
+
+#### Timeline
+- 2025-09 至 2025-11｜Visa Direct 公布稳定币预充值与终端稳定币 payout 试点；仅作历史背景。[S1]
+- 2026-10-15｜Inyo Global 成为首个商业生产 enabler，稳定币预充值由试点进入实际运营。[S1]
+
+#### Current Assessment
+- 事实：首个商业生产部署及 Inyo 的角色由 Visa 官方确认。
+- 推测：稳定币正在成为成熟跨境 payout 网络的企业资金管理选项，而不只是前台钱包功能。
+- 待验证假设：生产客户数、交易量、地区、成本、稳定币 payout 端点的同期开放范围和运营表现。
+
+#### Why It Matters to Sykka
+这是从试点到生产的明确阶段变化，说明竞争焦点包含后台流动性和跨境资金效率；评估时需区分预充值与收款人直接收到稳定币两种能力。
+
+#### Open Questions
+- [ ] 哪些客户和地区已进入生产，预充值与稳定币 payout 的规模和费率如何？｜验证方式：Visa、Inyo 和客户披露｜出现量化生产数据时复查。
+
+#### Sources
+- S1｜[Visa Direct Launches Stablecoin-Powered Money Movement as Pilots Move to Production](https://corporate.visa.com/en/sites/visa-perspectives/newsroom/visa-direct-moves-stablecoin-pilots-production.html)｜Visa 官方｜发布日期：2026-10-15｜查阅日期：2026-10-19｜支持：从试点到生产、Inyo 首个 enabler、USDC 预充值与范围限制｜限制：未披露客户数、交易量、费用或完整地区清单。
 
 ### Active Signal 复制模板
 
