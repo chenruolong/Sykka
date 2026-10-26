@@ -4,7 +4,7 @@ Competitive Intelligence：Daily Intelligence → Weekly Maintenance → Event T
 
 V2：Tracker 是证据 / 长期记忆层；[月报](monthly/README.md)是阶段性判断层。Tracker 只保留当前判断、观察重点和事件证据，不追加日报全文或周维护日志。已有首轮扫描记录作为初始化证据保留。
 
-- 创建：2026-09-07；最近维护：2026-10-19（补充维护 2026-10-08 至 2026-10-18 日报：新增 RD-005、KA-003、IND-019 至 IND-030；复核既有 Active Signals）。
+- 创建：2026-09-07；最近维护：2026-10-26（补充维护 2026-10-19 至 2026-10-25 日报：新增 IND-031 至 IND-040；复核既有 Active Signals）。
 - 时间口径：Asia/Shanghai；日期 YYYY-MM-DD，来源时间保留原时区。
 - 节奏：每日发现与去重，每周五沉淀过去 7 天日报及全部 Active Signals。
 - 入库：P0 和值得持续跟踪的 P1；P2 默认过滤。
@@ -1224,6 +1224,304 @@ Visa 10 月 15 日宣布 Visa Direct 稳定币能力从试点进入商业部署�
 
 #### Sources
 - S1｜[Visa Direct Launches Stablecoin-Powered Money Movement as Pilots Move to Production](https://corporate.visa.com/en/sites/visa-perspectives/newsroom/visa-direct-moves-stablecoin-pilots-production.html)｜Visa 官方｜发布日期：2026-10-15｜查阅日期：2026-10-19｜支持：从试点到生产、Inyo 首个 enabler、USDC 预充值与范围限制｜限制：未披露客户数、交易量、费用或完整地区清单。
+
+### IND-031｜Visa 与 Mesh 合作将钱包余额接入 Visa 消费网络
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-10-19
+- Last Updated: 2026-10-19
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Mesh 10 月 19 日宣布与 Visa 建立战略合作，计划让参与平台的用户直接使用现有钱包中的稳定币、加密资产或法币余额完成线上及线下 Visa 支付。Mesh 负责资金来源与转换编排，后台配置 Visa 支付凭证，商户仍按现有流程收取法币。公告称 Mesh 已服务 200 多家企业，并把 KAST 列为既有合作伙伴之一；这不等于 KAST 已接入本次 Visa 新方案。[S1]
+
+#### Timeline
+- 2026-10-19｜Mesh 公布 Visa 合作与钱包原生消费方案；首批平台、设备、地区和时间待定。[S1]
+
+#### Current Assessment
+- 事实：合作、目标工作流和参与平台后续公布安排已有公司公告及 Visa 高管引述支持。
+- 推测：稳定币消费入口可能从独立卡产品进一步转向现有钱包余额。
+- 待验证假设：首批平台和市场、支持资产、正式开放时间、费率、实际交易量，以及 KAST 是否接入本方案。Visa 的 1.75 亿商户受理点是现有网络规模，不是新方案当前可用范围。
+
+#### Why It Matters to Sykka
+钱包余额到消费的链路可能绕过用户另行申请和预充值一张加密卡。Sykka 需关注这一模式对卡产品差异化、钱包入口和交易路由成本的影响。
+
+#### Open Questions
+- [ ] 哪些平台、地区、设备和资产首发，KAST 是否实际接入？｜验证方式：Visa、Mesh、KAST 产品公告与实测｜首批上线时复查。
+
+#### Sources
+- S1｜[Mesh and Visa Partner to Make Stablecoin and Crypto Balances Spendable Across 175 Million Merchants](https://www.prnewswire.com/news-releases/mesh-and-visa-partner-to-make-stablecoin-and-crypto-balances-spendable-across-175-million-merchants-302912148.html)｜Mesh 公司新闻稿，含 Visa 高管引述｜发布日期：2026-10-19｜查阅日期：2026-10-26｜支持：合作、工作流、既有合作伙伴及后续开放安排｜限制：首批上线范围和运营数据未披露；网络规模不是实际开放范围。
+
+### IND-032｜Coinbase 与 Thunes 整合稳定币基础设施和本地出金网络
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-10-19
+- Last Updated: 2026-10-19
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Coinbase 与 Thunes 10 月 19 日宣布战略合作：Coinbase 为 Thunes 提供稳定币基础设施，Thunes 将 Direct Global Network 接入 Coinbase，面向企业供应商付款、Gig Worker 薪酬和国际汇款提供本地银行账户及移动钱包出金。Thunes 披露其既有网络覆盖 140 多个国家、90 多种货币和 220 多种支付方式；公告未列出 Coinbase 新服务的首批实际开放市场。[S1][S2]
+
+#### Timeline
+- 2026-10-19｜双方分别确认合作、分工和目标场景。[S1][S2]
+
+#### Current Assessment
+- 事实：合作与双方基础设施分工已由两家公司确认。
+- 推测：Coinbase 正通过现成本地清算和钱包网络补齐稳定币支付最后一公里。
+- 待验证假设：首批国家、开放时间、费率、到账表现和实际交易量。Thunes 既有网络覆盖不能直接视为 Coinbase 新服务已全面开放。
+
+#### Why It Matters to Sykka
+稳定币分发竞争继续向本地银行和移动钱包出金能力延伸。Sykka 需按走廊比较可用范围、到账率、成本和合作方依赖。
+
+#### Open Questions
+- [ ] 哪些市场和支付方式已进入生产，费率和交易量如何？｜验证方式：Coinbase、Thunes 和客户公告｜首批生产上线时复查。
+
+#### Sources
+- S1｜[Thunes and Coinbase Join Forces to Drive Next Generation Global Payments](https://www.thunes.com/news/thunes-and-coinbase-join-forces-to-drive-next-generation-global-payments/)｜Thunes 官方｜发布日期：2026-10-19｜查阅日期：2026-10-26｜支持：合作、网络接入、目标场景和既有覆盖口径｜限制：未披露首批实际开放市场与运营数据。
+- S2｜[Coinbase and Thunes Connect Stablecoin Infrastructure with Global Fiat Payouts](https://www.coinbase.com/blog/coinbase-and-thunes-connect-stablecoin-infrastructure)｜Coinbase 官方｜发布日期：2026-10-19｜查阅日期：2026-10-26｜支持：双方分工和本地银行、移动钱包出金方向｜限制：属于合作公告，未证明规模采用。
+
+### IND-033｜Euronet 与 Fireblocks 扩展白标稳定币卡基础设施合作
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-10-19
+- Last Updated: 2026-10-19
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Euronet 与 Fireblocks 10 月 19 日宣布把既有跨境结算和预充值合作扩展至发卡。银行及金融科技企业可计划通过 Euronet 的 Ren 和 CoreCard 平台推出白标稳定币卡，Fireblocks 提供嵌入式钱包；用户开户时建立钱包，法币充值转换为稳定币余额，消费时商户仍收到当地法币。[S1]
+
+#### Timeline
+- 2025-10｜双方开始在 Euronet 跨境支付业务中合作结算和预充值；仅作背景。[S1]
+- 2026-10-19｜合作扩展至稳定币卡发卡能力。[S1]
+
+#### Current Assessment
+- 事实：合作扩展、技术分工和产品设计已由 Euronet 官方披露。
+- 推测：稳定币余额、嵌入式钱包和发卡正被组合成可外购的白标能力。
+- 待验证假设：首批上线客户、国家、资产、费率、正式开放时间和交易量。
+
+#### Why It Matters to Sykka
+完整稳定币卡链路的外包门槛下降，可能加快同类产品进入市场。Sykka 需关注差异化场景、分发网络和供应商依赖，而不只比较发卡速度。
+
+#### Open Questions
+- [ ] 哪些客户和市场率先上线，实际成本和使用量如何？｜验证方式：Euronet、Fireblocks 和客户公告｜首批生产部署时复查。
+
+#### Sources
+- S1｜[Euronet and Fireblocks Power the Next Era of Mainstream Payments with Stablecoin-Funded Card Issuing](https://ir.euronetworldwide.com/news-releases/news-release-details/euronet-and-fireblocks-power-next-era-mainstream-payments)｜Euronet 投资者关系公告｜发布日期：2026-10-19｜查阅日期：2026-10-26｜支持：合作扩展、平台、嵌入式钱包和工作流｜限制：产品计划尚未提供首批客户、市场或运营数据。
+
+### IND-034｜Western Union 选择 Noah 为 Receiver Redirect 提供稳定币基础设施
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-10-20
+- Last Updated: 2026-10-20
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Noah 10 月 20 日宣布被 Western Union 选为 Receiver Redirect 的稳定币基础设施提供方，围绕 Anchorage Digital Bank 在 Solana 发行的 USDPT，连接 Western Union 线下代理网点、钱包和 Stablecard。Noah 负责预充值、转换、分发及相关合规基础设施。公告所称 200 多个国家和地区、60 多种货币是计划服务范围，不代表当前已全面开放。[S1]
+
+#### Timeline
+- 2026-10-20｜Noah 公布合作、基础设施分工和目标范围，公告包含 Western Union 负责人引述。[S1]
+
+#### Current Assessment
+- 事实：供应商选择和目标链路由 Noah 公告及 Western Union 高管引述确认。
+- 推测：传统汇款网络正在把现金和法币入口与稳定币钱包、消费出口连接。
+- 待验证假设：完整上线时间、实际开放国家、交易量、费用、Stablecard 可用范围及消费者采用。
+
+#### Why It Matters to Sykka
+拥有大规模线下入口的传统汇款机构可能在稳定币分发上形成渠道优势。Sykka 需同时比较线上入金、本地现金网络和消费出口。
+
+#### Open Questions
+- [ ] Receiver Redirect 在哪些市场实际开放，费用、到账时间和交易量如何？｜验证方式：Western Union、Noah 产品页和用户实测｜正式上线时复查。
+
+#### Sources
+- S1｜[Western Union Selects Noah to Power Global Stablecoin Payments Network](https://noah.com/blog/noah-western-union-partnership)｜Noah 官方，含 Western Union 高管引述｜发布日期：2026-10-20｜查阅日期：2026-10-26｜支持：合作、USDPT、工作流和目标范围｜限制：目标覆盖不等于实际开放；未披露上线时间和运营数据。
+
+### IND-035｜Mural 完成 Tether 领投的 1,500 万美元 Series A
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-20
+- Last Updated: 2026-10-20
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Mural 10 月 20 日宣布完成 1,500 万美元 Series A，由 Tether 领投，累计融资达到 2,800 万美元。公司同时自报：自 2025 年 API 上线以来累计处理 21 亿美元支付量，终端用户分布于 128 个国家，2026 年截至公告日的支付量接近 2025 全年的六倍；未披露稳定币占比、统计方法、活跃客户数或收入。[S1]
+
+#### Timeline
+- 2026-10-20｜Mural 公布融资及经营规模口径。[S1]
+
+#### Current Assessment
+- 事实：融资、投资方和公司披露口径已由公司新闻稿确认；Confirmed 不代表经营数据经过独立审计。
+- 推测：账户、支付、身份和合规的一体化基础设施正在吸引稳定币发行方资本。
+- 待验证假设：稳定币交易占比、收入、客户活跃度、各市场牌照覆盖和单位经济性。
+
+#### Why It Matters to Sykka
+该事件提供稳定币资金分发基础设施的融资和规模参照，但不能把累计支付量当作年度 GMV 或稳定币交易量。
+
+#### Open Questions
+- [ ] 21 亿美元的统计期间、资产构成、客户数和收入如何？｜验证方式：Mural、Tether、客户案例及后续财务披露｜出现可比经营数据时复查。
+
+#### Sources
+- S1｜[Mural Raises $28 Million Total to Power Fintechs and Agentic Finance](https://www.prnewswire.com/news-releases/mural-raises-28-million-total-to-power-fintechs-and-agentic-finance-302914128.html)｜Mural 公司新闻稿，含 Tether CEO 引述｜发布日期：2026-10-20｜查阅日期：2026-10-26｜支持：融资、投资方、产品与公司自报规模｜限制：经营数据未经独立审计，稳定币占比和收入未披露。
+
+### IND-036｜美国 OCC 发布 GENIUS Act 最终实施规则
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-21
+- Last Updated: 2026-10-21
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+美国货币监理署 OCC 10 月 21 日发布 GENIUS Act 最终实施规则，适用于 OCC 管辖的获准支付稳定币发行人、外国发行人及部分托管活动，2027 年 1 月 18 日生效。规则涵盖活动、储备、赎回、风险管理、审计和报告、托管、申请注册、监督及资本等；BSA、AML 和 OFAC 制裁相关规则将另行制定，OCC 也尚未开始受理申请和豁免请求。[S1][S2]
+
+#### Timeline
+- 2026-10-21｜OCC 发布最终规则及实施公告。[S1][S2]
+- 2027-01-18｜最终规则和 GENIUS Act 计划生效。[S1][S2]
+
+#### Current Assessment
+- 事实：规则文本、适用对象、覆盖事项和生效日期由 OCC 确认。
+- 推测：美国支付稳定币发行和合作方准入将进入更明确的申请、储备和监督框架。
+- 待验证假设：申请受理时间、BSA/AML/OFAC 配套规则、第三方奖励安排的具体合规判断，以及对分发平台合作模式的实际影响。
+
+#### Why It Matters to Sykka
+若 Sykka 未来面向美国市场或接入受该规则约束的发行人，需要核对发行资质、储备赎回、托管、奖励资金来源和合作责任，不能把最终规则发布等同于所有配套要求已完备。
+
+#### Open Questions
+- [ ] OCC 何时开始受理申请，配套 BSA/AML/OFAC 规则及第三方奖励解释如何落地？｜验证方式：OCC 后续公告、最终规则和执法文件｜相关文件发布时复查。
+
+#### Sources
+- S1｜[GENIUS Act Regulations: Final Rule](https://www.occ.treas.gov/news-issuances/bulletins/2026/bulletin-2026-50.html)｜美国 OCC Bulletin 2026-50｜发布日期：2026-10-21｜查阅日期：2026-10-26｜支持：适用对象、规则覆盖范围和生效日期｜限制：BSA/AML/OFAC 另行制定，申请尚未开始受理。
+- S2｜[OCC Advances U.S. Digital Asset Leadership with Final Rule to Implement GENIUS Act](https://www.occ.treas.gov/news-issuances/news-releases/2026/nr-occ-2026-92.html)｜美国 OCC 新闻稿｜发布日期：2026-10-21｜查阅日期：2026-10-26｜支持：规则发布、监管范围、配套进度和生效日期｜限制：概览不替代完整规则文本。
+
+### IND-037｜SoFi 上线计息代币化存款 SoFi Earn
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-22
+- Last Updated: 2026-10-22
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW（与 IND-009 的 SoFiUSD 卡结算相关，但属于独立产品事件）
+
+#### What Happened
+SoFi 10 月 22 日宣布上线 SoFi Earn（SOFIE）。每枚 SOFIE 代表 SoFi Bank 的 1 美元存款，公告时 APY 为 4.40% 且可变，资金按适用规则享受 FDIC 存款保险。用户需要先按 1:1 把 SOFIE 转为 SoFiUSD，才能购买加密资产或通过支持的区块链向外部钱包转出；SOFIE 本身不是支付稳定币。产品正面向 SoFi Crypto 用户分阶段开放至 11 月。[S1][S2]
+
+#### Timeline
+- 2026-10-22｜SoFi 宣布产品上线并开始分阶段开放。[S1][S2]
+
+#### Current Assessment
+- 事实：产品法律属性、收益口径、转换链路和分阶段开放由 SoFi 官方确认。
+- 推测：SoFi 正把计息存款、稳定币转换和链上分发连接成连续资金路径。
+- 待验证假设：实际开放用户、存款规模、SOFIE 转换率、SoFiUSD 外转和消费使用量。4.40% APY 可变，不是保证利率。
+
+#### Why It Matters to Sykka
+该模式把余额收益和资金保障放在稳定币分发之前，与 KAST Reserve 的余额留存目标存在交集但法律属性不同。Sykka 需比较用户信任、资金成本和消费转化。
+
+#### Open Questions
+- [ ] 实际存款规模、转为 SoFiUSD 的比例及后续消费或外转量如何？｜验证方式：SoFi 产品数据、监管披露和实测｜完成全量开放或披露规模时复查。
+
+#### Sources
+- S1｜[SoFi Launches SoFi Earn (SOFIE), the First and Only National Bank-Issued Tokenized Deposit for Consumers](https://www.sofi.com/newsroom/sofi-launches-sofi-earn-sofie-the-first-and-only-national-bank-issued-tokenized-deposit-for-consumers/)｜SoFi 官方｜发布日期：2026-10-22｜查阅日期：2026-10-26｜支持：上线、存款属性、APY、保险、转换链路与开放进度｜限制：属于公司公告，运营数据未披露。
+- S2｜[How Does Earning Interest on SoFi Earn Work?](https://support.sofi.com/hc/en-us/articles/how-does-earning-interest-on-sofi-earn-work)｜SoFi Help Center｜发布日期未标，查阅日期：2026-10-26｜支持：按日计息、按月支付、APY 可变和分阶段开放｜限制：资格和完整条款需以账户协议为准。
+
+### IND-038｜爱尔兰央行处罚 Coinbase Ireland 客户资金保护与外包缺陷
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-22
+- Last Updated: 2026-10-22
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+爱尔兰中央银行 10 月 22 日宣布对 Coinbase Ireland Limited 处以 3,252,618 欧元罚款，涉及 2020 年 11 月 1 日至 2025 年 8 月 19 日期间的客户资金保障和外包管理缺陷。监管机构认定其曾过度依赖美国集团、缺少充分本地监督能力，客户资金保障账户长期出现资金不足，并存在内部控制和重大变化报告不足。Coinbase Ireland 已承认违规事实；制裁仍需爱尔兰高等法院确认后生效。[S1]
+
+#### Timeline
+- 2026-10-21｜爱尔兰央行与 Coinbase Ireland 达成和解。[S1]
+- 2026-10-22｜监管机构公布处罚；高等法院确认仍待完成。[S1]
+
+#### Current Assessment
+- 事实：违规期间、问题范围、罚款金额和程序状态由监管机构确认。
+- 推测：稳定币和加密金融平台的资金保护、集团外包和本地治理将持续成为欧洲监管重点。
+- 待验证假设：高等法院确认结果及整改后的持续有效性。历史缺陷不代表当前仍存在资金缺口，也不能外推至 Coinbase 全球所有业务。
+
+#### Why It Matters to Sykka
+资金隔离、对账、合作方监督和本地责任不能完全依赖集团或外包方。该事件可作为欧洲市场资金保护控制与供应商治理的反面案例。
+
+#### Open Questions
+- [ ] 高等法院是否确认制裁，监管机构或公司是否披露整改验证？｜验证方式：爱尔兰央行、法院和 Coinbase 公告｜程序更新时复查。
+
+#### Sources
+- S1｜[The Central Bank Takes Enforcement Action Against Coinbase Ireland](https://www.centralbank.ie/news/article/press-release-central-bank-takes-enforcement-action-against-coinbase-ireland-22-october-2026)｜爱尔兰中央银行｜发布日期：2026-10-22｜查阅日期：2026-10-26｜支持：违规事实、期间、金额、程序状态和监管判断｜限制：制裁待高等法院确认；不证明当前仍有缺口。
+
+### IND-039｜汇丰在 PayMe 上线港元稳定币 RedCoin
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-23
+- Last Updated: 2026-10-23
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+汇丰 10 月 23 日正式推出港元稳定币 HSBC RedCoin（RCHKD），通过 PayMe 分阶段向零售用户开放稳定币钱包，支持点对点转账和在 PayMe 商户付款。汇丰披露 PayMe 现有超过 330 万用户、超过 10 万家商户，并计划年内接入 HSBC HK Mobile Banking App 及代币化投资产品；这些是现有网络规模和后续计划，不是 RedCoin 实际激活用户、交易商户或交易量。[S1]
+
+#### Timeline
+- 2026-04｜汇丰香港主体获得香港金管局稳定币发行牌照；仅作背景。[S1]
+- 2026-10-23｜RedCoin 在 PayMe 正式上线并开始分阶段开放。[S1]
+
+#### Current Assessment
+- 事实：牌照、产品上线、功能和分阶段开放由汇丰官方确认。
+- 推测：拥有现成用户和商户网络的传统银行正在把稳定币嵌入成熟零售支付入口。
+- 待验证假设：钱包激活率、稳定币交易量、实际可用商户、外部钱包转账、跨境范围和投资产品采用。
+
+#### Why It Matters to Sykka
+竞争不只来自加密原生卡和钱包，也来自能直接复用用户、商户、牌照和信任基础的银行。Sykka 需关注稳定币分发渠道和场景密度，而不是仅比较产品功能。
+
+#### Open Questions
+- [ ] RedCoin 的激活用户、交易量、外部钱包和跨境能力如何？｜验证方式：汇丰、HKMA、PayMe 产品数据和实测｜分阶段开放完成或披露运营数据时复查。
+
+#### Sources
+- S1｜[HSBC RedCoin Launches Today](https://www.about.hsbc.com.hk/news-and-media/hsbc-redcoin-launches-today)｜汇丰香港官方｜发布日期：2026-10-23｜查阅日期：2026-10-26｜支持：上线、牌照、功能、现有网络规模和后续计划｜限制：未披露 RedCoin 实际激活、交易量或外部钱包能力。
+
+### IND-040｜新加坡、马来西亚和泰国央行共同推进 BLOOM 跨境数字货币结算
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-10-23
+- Last Updated: 2026-10-23
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+新加坡金融管理局 10 月 23 日宣布，马来西亚国家银行和泰国央行加入 BLOOM 成为政策制定方成员，与金融机构、支付网络和技术提供方共同研究代币化存款及符合监管预期的稳定币在跨境支付和结算中的接受、交换、互操作及可编程控制。新增行业参与方包括 Airwallex、Mastercard、Maybank、Nium、Ripple、ShopeePay、Visa 和 World Bank Group。[S1][S2]
+
+#### Timeline
+- 2026-10-23｜BNM、BOT 及新增行业成员加入 BLOOM，三家央行共同推进跨境数字货币结算框架。[S1][S2]
+
+#### Current Assessment
+- 事实：参与方、目标和工作重点由 MAS 官方确认。
+- 推测：若形成共同实施框架，东南亚跨境稳定币和代币化存款接入可能减少逐一建立双边安排的成本。
+- 待验证假设：具体试点、技术标准、参与资格、监管互认、正式商用时间和实际结算量。加入倡议不等于统一规则生效或网络已上线。
+
+#### Why It Matters to Sykka
+东南亚是 Sykka 关注的分发市场。应持续观察该框架是否产生可接入的入金、出金、结算和合规能力，而不是把政策协作直接视为产品可用。
+
+#### Open Questions
+- [ ] 哪些跨境走廊和用例进入试点，标准、资格和商用时间如何？｜验证方式：MAS、BNM、BOT、BLOOM 参与方公告｜首批试点或实施框架发布时复查。
+
+#### Sources
+- S1｜[MAS, Bank Negara Malaysia and Bank of Thailand Partner with Industry to Advance Cross-Border Settlement in Digital Money through BLOOM](https://www.mas.gov.sg/news/media-releases/2026/mas-bnm-and-bot-partner-with-industry-to-advance-cross-border-settlement-in-digital-money)｜新加坡金融管理局｜发布日期：2026-10-23｜查阅日期：2026-10-26｜支持：政策制定方、行业成员、目标和三项重点｜限制：属于合作框架，不是商业化上线。
+- S2｜[BLOOM](https://www.mas.gov.sg/schemes-and-initiatives/BLOOM)｜新加坡金融管理局项目页｜发布日期：2026-10-23｜查阅日期：2026-10-26｜支持：项目目标、重点、完整成员和参与方式｜限制：项目页不提供实际结算量或上线时间。
 
 ### Active Signal 复制模板
 
