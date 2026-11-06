@@ -4,7 +4,7 @@ Competitive Intelligence：Daily Intelligence → Weekly Maintenance → Event T
 
 V2：Tracker 是证据 / 长期记忆层；[月报](monthly/README.md)是阶段性判断层。Tracker 只保留当前判断、观察重点和事件证据，不追加日报全文或周维护日志。已有首轮扫描记录作为初始化证据保留。
 
-- 创建：2026-09-07；最近维护：2026-10-26（补充维护 2026-10-19 至 2026-10-25 日报：新增 IND-031 至 IND-040；复核既有 Active Signals）。
+- 创建：2026-09-07；最近维护：2026-11-06（补充维护截至 2026-11-03 的可访问日报：新增 RD-006、IND-041 至 IND-045；更新 KA-001、IND-023；复核既有 Active Signals）。
 - 时间口径：Asia/Shanghai；日期 YYYY-MM-DD，来源时间保留原时区。
 - 节奏：每日发现与去重，每周五沉淀过去 7 天日报及全部 Active Signals。
 - 入库：P0 和值得持续跟踪的 P1；P2 默认过滤。
@@ -110,9 +110,9 @@ RedotPay 于 9 月 7 日公告称，某四大会计师事务所已审查其香�
 - Priority: P0
 - Status: Confirmed
 - First Seen: 2026-09-07
-- Last Updated: 2026-09-07
+- Last Updated: 2026-11-01
 - Monthly Review: 无（尚无已核验的月报引用）
-- 本轮判定：NEW（官方页面本周更新；确切首次上线日期待确认）
+- 本轮判定：UPDATE（新增补贴经济性、余额规模及亏损状态披露）
 
 #### What Happened
 9 月 3 日更新的官方说明将 Reserve 定义为独立 USD 余额：符合条件的奖励每日累计，通常记入 Spending Balance；余额可用于符合条件的卡消费，转账前需移回 Spending。奖励由 KAST 自行资助，可变更、暂停或终止；官方明确它不是利息、APY、收益或投资回报，也不是受保银行存款，且不同于 KAST Earn 中的 Gauntlet / USD Prime。[S1]
@@ -122,21 +122,24 @@ RedotPay 于 9 月 7 日公告称，某四大会计师事务所已审查其香�
 #### Timeline
 - 2026-09-03｜官方文章标注 Last updated，披露余额使用方式、会员档位及引导期条件；不能据此确定首发日期。[S1]
 - 2026-09-07｜核验页面，将促销奖励和 Earn 产品分开记录。
+- 2026-11-01｜CoinDesk 刊登 10 月对 KAST CEO 的采访：管理层称 Reserve 截至 9 月吸引数千万美元余额；底层资产收益约 3.5%–4%，低于对外列示的 8%–12% 分档奖励，差额由 KAST 补贴；公司因增长投入由接近盈亏平衡转为亏损。[S2]
 
 #### Current Assessment
-- 事实：上述产品规则已由官方公开；未实测 App、兑付或所有地区资格。
-- 推测：机制将留存余额、付费会员与消费资金结合，可能提高用户预留余额的意愿。
-- 待验证假设：是否增加持续自有资金消费，而不是短期逐利余额；补贴到期后的余额和会员留存未知。
+- 事实：产品规则已由官方公开；管理层另向 CoinDesk 披露余额规模、底层收益区间、补贴及亏损状态。后者属于管理层陈述，未取得审计财务数据，亦未实测 App、兑付或所有地区资格。
+- 推测：Reserve 通过高于底层收益的奖励换取资金沉淀和市场份额，将余额留存、付费会员与消费资金连接，但当前经济性依赖补贴。
+- 待验证假设：补贴形成的余额是否转化为持续自有资金消费；实际综合补贴率、用户留存、净亏损及奖励下调后的余额稳定性未知。
 
 #### Why It Matters to Sykka
-需要比较“余额为什么留下、何时转成真实消费、奖励成本由谁承担”。可关注净入金、可用余额、持续消费和奖励成本的关联，不能只比较最高宣传比例。
+需要比较“余额为什么留下、何时转成真实消费、奖励成本由谁承担”。KAST 的新增披露说明最高奖励率不能脱离底层收益、补贴成本和长期贡献分析；应同时关注净入金、可用余额、持续消费、会员收入与奖励成本。
 
 #### Open Questions
 - [ ] 适用国家、余额法律属性、奖励计算周期及完整资格是什么？｜核验 Reserve 条款和 App 说明｜2026-09-11。
 - [ ] 引导期是否提前结束、奖励是否调整？｜官方页面及活动规则｜2026-09-11 后持续观察；2026-12-31 前复查。
+- [ ] 数千万美元余额、实际补贴总额、净亏损和奖励用户留存如何？｜核验审计财务披露、后续管理层数据及产品条款｜出现量化经营披露或奖励调整时复查。
 
 #### Sources
 - S1｜[Introducing USD Reserve Account](https://www.kast.xyz/blog/usd-reserve-account)｜KAST 官方｜页面更新 2026-09-03，查阅 2026-09-07｜浏览器核验；首次发布日期未知，完整法律条款及账户内资格尚未核验。
+- S2｜[Crypto card startups are racking up losses just to buy your loyalty with big rewards](https://www.coindesk.com/business/2026/11/01/crypto-card-startups-are-racking-up-losses-just-to-buy-your-loyalty-with-big-rewards)｜CoinDesk / 管理层采访｜发布日期：2026-11-01｜查阅日期：2026-11-06｜支持：Reserve 奖励与底层收益区间、数千万美元余额、补贴、亏损及资金续航陈述｜限制：采访在 10 月进行；未披露补贴总额、审计亏损或最新余额，数字主要来自管理层。
 
 ### KA-002｜KAST 用每日猜拳解锁限时消费返现加倍
 
@@ -843,6 +846,36 @@ RedotPay 与 Nium 10 月 8 日宣布合作，RedotPay 将接入 Nium 覆盖 190 
 #### Sources
 - S1｜[Nium Brings Global Off-Ramping Infrastructure to RedotPay](https://www.redotpay.com/news/nium-brings-global-off-ramping-infrastructure-to-redotpay)｜RedotPay / Nium 联合官方公告｜发布日期：2026-10-08｜查阅日期：2026-10-19｜支持：合作、网络范围及公司自报规模｜限制：未披露 RedotPay 已开放走廊、使用量、费率或上线进度。
 
+### RD-006｜RedotPay 披露三年累计充值超过 80 亿美元
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-30
+- Last Updated: 2026-10-30
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+RedotPay 10 月 30 日在安全说明中称，过去三年用户累计向账户充值超过 80 亿美元，并重申平台有 900 万用户。文章同时说明钱包采用分布式密钥管理、多人审批和全天候链上监控，并列出 Fireblocks、Circle 等合作方；其中经营规模的实质新增是累计充值金额，900 万用户及部分安全合作此前已有披露。[S1]
+
+#### Timeline
+- 2026-10-30｜RedotPay 首次披露过去三年累计充值超过 80 亿美元。[S1]
+
+#### Current Assessment
+- 事实：公司公开披露累计充值规模及统计跨度；Confirmed 仅适用于该公司声明存在及其明确口径。
+- 推测：累计充值为 RedotPay 资金流入规模提供新的量级参照，但不能直接说明活跃、消费或收入质量。
+- 待验证假设：充值的资产构成、去重与退款处理、月度趋势、净入金、当前托管余额及卡消费转化率。
+
+#### Why It Matters to Sykka
+这是核心竞品的资金流入规模参照。对比时应把累计充值、净入金、余额、卡消费 GMV 和收入分开，不能用 80 亿美元直接推算用户 ARPU 或消费规模。
+
+#### Open Questions
+- [ ] 80 亿美元的统计期间起止、资产范围、重复充值及退款处理规则是什么？｜验证方式：官方方法说明、经营披露或审计材料｜下次量化披露时复查。
+- [ ] 累计充值中有多少转化为卡消费、转账、提现或留存余额？｜验证方式：拆分经营数据｜月结持续观察。
+
+#### Sources
+- S1｜[Security at RedotPay: How We Protect You](https://www.redotpay.com/news/security-at-redotpay-how-we-protect-you)｜RedotPay 官方｜发布日期：2026-10-30｜查阅日期：2026-11-06｜支持：过去三年累计充值超过 80 亿美元、900 万用户及安全控制说明｜限制：公司自报；未披露充值统计方法、净入金、余额、卡消费或收入拆分。
+
 ### KA-003｜KAST 披露约 140 万用户及最新经营规模
 
 - Priority: P1
@@ -1054,29 +1087,32 @@ Qivalis 10 月 14 日宣布获得荷兰央行电子货币机构许可，具备�
 - Priority: P1
 - Status: Confirmed
 - First Seen: 2026-10-15
-- Last Updated: 2026-10-15
+- Last Updated: 2026-10-29
 - Monthly Review: 无（尚无已核验的月报引用）
-- 本轮判定：NEW（2026-10-16 写入失败后的重新核验补录）
+- 本轮判定：UPDATE（新增 Airtm 钱包和商户场景集成）
 
 #### What Happened
 Mastercard 与 BVNK 10 月 15 日上线 Mastercard Global Money Platform，通过单一 API 提供法币和稳定币多币种账户、实时兑换、稳定币关联卡、Mastercard Move 本地银行出金及 Treasury 能力。平台已可通过 BVNK 获取；Nuvei、Marqeta、Ontop、Beem 和 Almond FinTech 列为首批集成方。40 多种货币、200 多个国家和地区的出金覆盖是 2027 年目标，不是当前覆盖。[S1]
 
 #### Timeline
 - 2026-10-15｜平台正式发布并可通过 BVNK 获取，公布首批集成方和后续覆盖目标。[S1]
+- 2026-10-29｜Airtm 与 BVNK 宣布通过 Airtm Connect 集成：计划让 Airtm 用户使用钱包余额向 BVNK 网络的参与商户付款，并增加充值和收款路径；合作将使用 Stellar，公告未披露已完成生产上线的国家和商户范围。[S2]
 
 #### Current Assessment
-- 事实：平台、模块和当前可获取状态由 Mastercard 官方确认。
-- 推测：大型卡组织正把账户、稳定币、兑换、消费和出金整合为统一分发层。
-- 待验证假设：各模块当前国家覆盖、客户生产状态、交易规模、费用和经济性。
+- 事实：平台、模块和当前可获取状态由 Mastercard 官方确认；Airtm 与 BVNK 已确认具体集成方向，但公告使用未来时态描述用户付款能力，不能视为全面生产开放。
+- 推测：大型卡组织正把账户、稳定币、兑换、消费和出金整合为统一分发层，并通过现有新兴市场钱包获得终端分发入口。
+- 待验证假设：Airtm 集成的上线时间、首批国家、参与商户、实际交易规模，以及平台各模块的当前覆盖、费用和经济性。
 
 #### Why It Matters to Sykka
 这与 Sykka 的资金分发链路高度重叠。竞争比较需要下钻真实开放范围和接入成本，不能把 2027 年目标当当前能力。
 
 #### Open Questions
 - [ ] 首批客户哪些已进入生产，各模块真实覆盖与定价如何？｜验证方式：产品文档、客户公告与实测｜出现客户上线时复查。
+- [ ] Airtm 集成何时开放，首批国家、商户及充值路径是什么？｜验证方式：Airtm、BVNK 产品公告与实测｜正式上线时复查。
 
 #### Sources
 - S1｜[Mastercard and BVNK Launch Global Money Platform to Power a Multi-Money World](https://www.mastercard.com/global/en/news-and-trends/press/2026/october/mastercard-and-bvnk-launch-global-money-platform-to-power-a-mult.html)｜Mastercard 官方｜发布日期：2026-10-15｜查阅日期：2026-10-19｜支持：上线、模块、首批集成方和目标范围｜限制：未披露完整当前覆盖、交易量或价格。
+- S2｜[Airtm and BVNK partner to expand wallet-native payments to emerging markets](https://www.bvnk.com/press/airtm-and-bvnk-partner-to-expand-wallet-native-payments-to-emerging-markets)｜BVNK / Airtm 合作公告｜发布日期：2026-10-29｜查阅日期：2026-11-06｜支持：合作、Airtm Connect、钱包商户支付方向、充值和收款路径及 Stellar｜限制：未披露生产上线时间、国家、商户、费率或交易量。
 
 ### IND-024｜Stripe 与 Plasma 合作开发多币种稳定币卡
 
@@ -1522,6 +1558,162 @@ SoFi 10 月 22 日宣布上线 SoFi Earn（SOFIE）。每枚 SOFIE 代表 SoFi B
 #### Sources
 - S1｜[MAS, Bank Negara Malaysia and Bank of Thailand Partner with Industry to Advance Cross-Border Settlement in Digital Money through BLOOM](https://www.mas.gov.sg/news/media-releases/2026/mas-bnm-and-bot-partner-with-industry-to-advance-cross-border-settlement-in-digital-money)｜新加坡金融管理局｜发布日期：2026-10-23｜查阅日期：2026-10-26｜支持：政策制定方、行业成员、目标和三项重点｜限制：属于合作框架，不是商业化上线。
 - S2｜[BLOOM](https://www.mas.gov.sg/schemes-and-initiatives/BLOOM)｜新加坡金融管理局项目页｜发布日期：2026-10-23｜查阅日期：2026-10-26｜支持：项目目标、重点、完整成员和参与方式｜限制：项目页不提供实际结算量或上线时间。
+
+### IND-041｜Bitget Wallet 上线美元和欧元虚拟账户
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-27
+- Last Updated: 2026-10-27
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Bitget Wallet 10 月 27 日上线 Virtual Account，由 Noah 提供账户服务。符合地区资格并完成身份验证的用户可在自托管钱包内申请美元和欧元收款账户，通过 ACH、Fedwire、SEPA 或 SWIFT 收款，到账法币自动转换为 USDT 或 USDC；余额可继续用于 Bitget Wallet Card、QR 支付、跨境转账及其他钱包功能。向外部银行账户出金仍标为未来数月推出，不是当前已开放能力。[S1]
+
+#### Timeline
+- 2026-10-27｜Bitget Wallet 正式发布美元、欧元虚拟账户及入金能力。[S1]
+- 2026-10-30｜官方页面更新排除地区清单，并强调币种可用性仍因地区和资格而异。[S1]
+
+#### Current Assessment
+- 事实：入金账户、支持网络、稳定币自动转换及钱包内后续用途由 Bitget Wallet 官方确认；外部银行出金仍在计划中。
+- 推测：自托管钱包正在把法币收款、稳定币余额与消费出口整合为全球资金账户体验，降低银行、交易所和消费工具之间的切换成本。
+- 待验证假设：实际获批率、支持地区、费用、到账成功率、虚拟账户活跃及资金向卡消费的转化。
+
+#### Why It Matters to Sykka
+该产品直接覆盖“法币收款账户 → 稳定币余额 → 卡 / QR / 跨境支付”的 Distribution 链路。比较时应区分已开放的入金与尚未开放的银行出金，并核验地区、费率和真实使用。
+
+#### Open Questions
+- [ ] 各地区分别开放 USD、EUR 还是两者，实际开户和入金成功率如何？｜验证方式：资格页、App 实测和用户条款｜地区清单或条款更新时复查。
+- [ ] 外部银行出金何时上线，首批市场、费用和限额是什么？｜验证方式：产品公告与 App｜正式上线时复查。
+
+#### Sources
+- S1｜[Bitget Wallet Virtual Account: Your Own USD and EUR Account, In Your Wallet](https://web3.bitget.com/en/blog/articles/bitget-wallet-virtual-account)｜Bitget Wallet 官方｜发布日期：2026-10-27，地区清单更新至 2026-10-30｜查阅日期：2026-11-06｜支持：上线、账户与收款网络、稳定币转换、用途、排除地区及出金计划｜限制：未披露用户量、获批率、交易量；“全球可用”受排除地区和资格限制。
+
+### IND-042｜Polygon Open Money Stack 扩展至 Solana
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-10-29
+- Last Updated: 2026-10-29
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+Polygon Labs 10 月 29 日宣布 Open Money Stack 已支持 Solana。企业可组合使用法币入金、虚拟账户、嵌入式 Solana 钱包、稳定币与资产转换、Solana / TRON / EVM 跨链路由，以及向银行账户、银行卡或现金网点的法币出金。官方称美国入出金基础设施覆盖 48 个州的汇款牌照，但没有提供各产品和国家的完整生产清单。[S1]
+
+#### Timeline
+- 2026-10-29｜Polygon OMS 正式增加 Solana 支持并披露端到端模块。[S1]
+
+#### Current Assessment
+- 事实：Solana 支持和各模块由 Polygon 官方确认，企业可整套或按模块接入。
+- 推测：稳定币支付基础设施正从单链组件转向统一编排层，减少应用分别集成账户、钱包、跨链和本地出金的复杂度。
+- 待验证假设：各出金方式和国家的实际生产覆盖、客户规模、端到端成功率、成本及第三方依赖。
+
+#### Why It Matters to Sykka
+这与 Sykka 构建账户、链上资金和全球出金的技术选型直接相关。应比较统一编排的接入速度与供应商集中风险，不能把模块清单等同于所有市场均已开放。
+
+#### Open Questions
+- [ ] Solana 端到端链路在哪些国家和客户中已进入生产，费率和 SLA 如何？｜验证方式：产品文档、客户案例与实测｜出现生产客户或覆盖清单时复查。
+
+#### Sources
+- S1｜[Polygon Open Money Stack now supports Solana](https://polygon.technology/blog/polygon-oms-supports-solana)｜Polygon Labs 官方｜发布日期：2026-10-29｜查阅日期：2026-11-06｜支持：Solana 支持、入金、账户、钱包、跨链路由及出金模块｜限制：公司产品说明；未披露完整国家覆盖、客户交易量、费用或端到端运营数据。
+
+### IND-043｜SBI 与 SMBC 围绕 JPYSC 签署资本业务合作
+
+- Priority: P1
+- Status: Developing
+- First Seen: 2026-10-30
+- Last Updated: 2026-10-30
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+SBI Holdings 与 SMBC Group 10 月 30 日签署资本业务合作协议，将围绕 JPYSC 等稳定币研究金融服务、用例及实证，并同意由 SMBC Group 取得 SBI Startale Marketing 5% 股权。SBI Startale Marketing 负责推动 JPYSC 使用场景和未来服务化；本次公告没有宣布新的商业支付产品或完成实证。[S1]
+
+#### Timeline
+- 2026-10-30｜双方签署资本业务合作协议并约定 5% 资本参与，合作仍处研究、用例和实证规划阶段。[S1]
+
+#### Current Assessment
+- 事实：协议、研究范围和 5% 资本参与由双方联合公告确认；Status 为 Developing，因为具体用例与商业化仍待形成。
+- 推测：日本大型金融集团正通过资本关系进入稳定币使用场景与分发层，而不只停留在发行和托管。
+- 待验证假设：股权交割、首个实证、支付或结算用例、开放客户、监管路径和商业化时间。
+
+#### Why It Matters to Sykka
+该合作为亚太稳定币账户和支付网络提供银行参与路径的案例。市场判断应继续区分资本合作、实证与商业化产品，不能把协议签署写成服务已上线。
+
+#### Open Questions
+- [ ] 5% 股权何时交割，首个 JPYSC 用例和实证范围是什么？｜验证方式：SBI、SMBC、SBI Startale Marketing 后续公告｜交割或实证启动时复查。
+
+#### Sources
+- S1｜[ステーブルコイン等を活用した新たな金融サービスの共同検討に関する資本業務提携について](https://www.sbigroup.co.jp/news/2026/1030_16698.html)｜SBI Holdings / SMBC Group 联合官方公告｜发布日期：2026-10-30｜查阅日期：2026-11-06｜支持：协议、JPYSC 等稳定币研究、用例与实证方向、5% 资本参与｜限制：未披露交割完成、具体产品、开放范围或商业化时间。
+
+### IND-044｜Binance 发生约 63 亿美元热钱包盗窃并分阶段恢复提现
+
+- Priority: P0
+- Status: Developing
+- First Seen: 2026-10-30
+- Last Updated: 2026-11-02
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW（合并 2026-10-31 至 2026-11-03 日报中的同一安全事故进展）
+
+#### What Happened
+Binance 10 月 30 日确认，其热钱包于 10 月 29 日 20:05 UTC 左右遭入侵，约 63 亿美元代币资产被盗，平台暂停提现并称将由 SAFU 与公司资金承担损失。公司当时称约 30 亿美元已在链上冻结、已准备超过 63.4 亿美元资金并覆盖约 80% 受影响金额；10 月 31 日称覆盖比例升至 90%，11 月 1 日开始分阶段恢复提现并称覆盖约 95%。11 月 2 日发布的储备证明零知识证明支持用户核验十种主要资产至少 1:1 支持，但剩余约 5% 低流动性代币仍待补足。[S1][S2][S3][S4]
+
+#### Timeline
+- 2026-10-29｜热钱包遭入侵；平台随后暂停提现。[S1]
+- 2026-10-30｜Binance 确认约 63 亿美元损失、约 30 亿美元链上冻结及约 80% 覆盖，并承诺由平台承担损失。[S1]
+- 2026-10-31｜公司称覆盖比例升至 90%，十种主要资产已 100% 支持，并完成新的储备快照。[S2]
+- 2026-11-01｜首批网络和资产分阶段恢复提现；公司称覆盖比例升至约 95%。[S3]
+- 2026-11-02｜10 月 31 日储备快照的完整零知识证明生成；其余低流动性资产和更多提现网络仍在恢复。[S4]
+
+#### Current Assessment
+- 事实：事故规模、恢复步骤和覆盖比例来自 Binance 官方连续公告；零知识证明支持指定资产在该快照时点的 1:1 覆盖，不等于事故原因、损失追回或全部资产恢复已独立验证。
+- 推测：事件说明大型平台仍可能产生集中托管和暂停提现风险，同时稳定币发行方、链上冻结、保险基金、公司流动性与储备证明共同影响恢复能力。
+- 待验证假设：完整攻击路径、独立调查结果、最终追回金额、100% 全资产补足、提现全面恢复及长期用户留存影响。
+
+#### Why It Matters to Sykka
+该事故对 Sykka 的合作方尽调、热钱包限额、密钥与审批、流动性储备、提现降级、稳定币冻结和用户补偿机制具有直接参考。应把“冻结”“平台补足”“储备证明”和“追回”分别记录，不能互相替代。
+
+#### Open Questions
+- [ ] 独立事后报告确认的攻击路径、责任和整改是什么？｜验证方式：Binance 事后报告、执法机构及独立安全机构｜报告发布时复查。
+- [ ] 剩余资产何时补足，提现何时全面恢复，用户流出与留存影响如何？｜验证方式：官方更新、储备证明和高可信经营数据｜达到 100% 或服务全面恢复时复查。
+
+#### Sources
+- S1｜[Security Incident Update #2](https://www.binance.com/en/square/post/382966351297065)｜Binance 官方｜发布日期：2026-10-30｜查阅日期：2026-11-06｜支持：事故时间、约 63 亿美元损失、暂停提现、链上冻结、约 80% 覆盖及资金承担承诺｜限制：公司自报；调查未完成，冻结不等于追回。
+- S2｜[Recovery Update #3: 90% of Stolen Assets Replenished](https://www.binance.com/en-TR/support/announcement/detail/1fdf1f61559c401da0435895ffcccb62)｜Binance 官方｜发布日期：2026-10-31｜查阅日期：2026-11-06｜支持：90% 覆盖、十种主要资产及储备快照｜限制：覆盖是平台补足口径，不是追回比例。
+- S3｜[Recovery Update #4: Withdrawals Resume in Phases](https://www.binance.com/en/support/announcement/detail/73911fb819b240f88b88256bdd318eda)｜Binance 官方｜发布日期：2026-11-01｜查阅日期：2026-11-06｜支持：首批提现恢复网络和约 95% 覆盖｜限制：仍为分阶段恢复，未覆盖全部资产和网络。
+- S4｜[Recovery Update #5: October 31st PoR Snapshot Now Fully Verifiable](https://www.binance.com/en/support/announcement/detail/185bd9a4717f44088b3be70287b8237f)｜Binance 官方｜发布日期：2026-11-02｜查阅日期：2026-11-06｜支持：零知识证明生成、指定资产 1:1 核验及剩余约 5%｜限制：快照证明不等于事故损失已追回或所有资产完成补足。
+
+### IND-045｜香港 EnsembleTX 升级 24/7 代币化存款结算并落地企业产品
+
+- Priority: P1
+- Status: Confirmed
+- First Seen: 2026-11-02
+- Last Updated: 2026-11-02
+- Monthly Review: 无（尚无已核验的月报引用）
+- 本轮判定：NEW
+
+#### What Happened
+香港金管局 11 月 2 日宣布，Project Ensemble 的受控试点 EnsembleTX 已支持使用代币化央行货币 24/7 结算跨行代币化存款交易，参与银行增至 12 家、行业先锋增至 20 家。渣打银行同日宣布在香港向合格企业客户推出 Tokenised Deposits，可在参与银行之间实时转移，并以代币化央行货币结算；China AMC、Finloop 和 PantherTrade 已完成真实代币化存款及货币市场基金结算交易。[S1][S2]
+
+#### Timeline
+- 2026-11-02｜HKMA 将 EnsembleTX 升级为 24/7 代币化央行货币跨行结算；渣打同步推出企业代币化存款产品并披露真实交易参与方。[S1][S2]
+
+#### Current Assessment
+- 事实：基础设施升级、参与方数量、渣打企业产品及已执行交易由监管方和银行官方确认；Confirmed 不代表向公众开放，EnsembleTX 仍是受控试点。
+- 推测：传统银行存款开始获得部分稳定币式的全天候、可编程资金能力，可能与企业稳定币账户和结算基础设施形成直接竞争。
+- 待验证假设：实际结算量、费用、客户资格、跨境扩展、商业化规模及与开放网络稳定币的互操作。
+
+#### Why It Matters to Sykka
+未来账户与分发竞争不仅来自 Crypto Wallet，也来自具备 24/7 链上资金管理能力的银行。Sykka 评估时应区分受控企业结算、零售开放和跨境可用性。
+
+#### Open Questions
+- [ ] EnsembleTX 与渣打产品的客户资格、交易量、费用和跨境计划是什么？｜验证方式：HKMA、渣打及参与客户后续披露｜出现量化运营数据或扩展市场时复查。
+
+#### Sources
+- S1｜[HKMA advances Project Ensemble pilot phase to 24/7 settlement in tokenised Central Bank Money](https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261102-5/)｜香港金融管理局｜发布日期：2026-11-02｜查阅日期：2026-11-06｜支持：24/7 代币化央行货币结算、12 家银行、20 家行业先锋及受控试点范围｜限制：未披露交易量、费用或公众开放计划。
+- S2｜[Standard Chartered launches Tokenised Deposits in Hong Kong](https://www.sc.com/en/press-release/standard-chartered-launches-tokenised-deposits-in-hong-kong/)｜渣打银行官方｜发布日期：2026-11-02｜查阅日期：2026-11-06｜支持：企业产品上线、跨行实时转移、真实交易参与方及未来扩展方向｜限制：仅面向合格企业客户；未披露规模、价格或跨境生产范围。
 
 ### Active Signal 复制模板
 
